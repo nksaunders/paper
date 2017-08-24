@@ -1,5 +1,9 @@
-\documentclass[]{article}
-\usepackage{amsmath}
+\documentclass[12pt,preprint]{aastex}
+\usepackage{mathtools}
+\usepackage{epstopdf}
+\epstopdfDeclareGraphicsRule{.pdf}{png}{.png}{convert #1 \OutputFile}
+\DeclareGraphicsExtensions{.png,.pdf}
+\begin{document}
 
 %opening
 \title{
@@ -9,16 +13,18 @@
 	\end{center}
 }
 
-\author{Nicholas Saunders, Rodrigo Luger}
+\author{Nicholas Saunders \altaffilmark{1,2,3}, Rodrigo Luger \altaffilmark{1,2}}
 
-\begin{document}
+\altaffiltext{1}{Department of Astronomy, University of Washington, Box 351580, Seattle, WA 98195, USA}
+\altaffiltext{2}{Virtual Planetary Laboratory, Seattle, WA 98195, USA}
+\altaffiltext{3}{nks1994@uw.edu}
 
-\maketitle
 
 \begin{abstract}
 
-We present methods to improve the power of existing detrending pipelines for space telescope exoplanet targets. Using simulations to model both the sensitivity variation of the \textit{Kepler Space Telescope} detector and stellar targets traversing the CCD, we characterize the contribution of CCD sensitivity variation to the noise of \textit{K2} light curves. With these simulated light curves, we assess the detrending power of two methods, first: fitting an aperture around the stellar Point Spread Function (PSF) to maximize light received by the target and exludes contribution from neighbors, and second: fitting a PSF to each target in the aperture and subtracting contribution by neighbors. The combination of these two methods increases the recovery accuracy of injection tests by (\textbf{some amount}).
+We present methods to improve the power of existing detrending pipelines for space telescope exoplanet targets with high motion relative to the CCD. Using simulations to model both the sensitivity variation of the \textit{Kepler Space Telescope} detector and stellar targets traversing the CCD, we characterize the contribution of CCD sensitivity variation to the noise of \textit{K2} light curves. With these simulated light curves, we assess the detrending power of two methods, first: fitting an aperture around the stellar Point Spread Function (PSF) to maximize light received by the target and exludes contribution from neighbors, and second: fitting a PSF to each target in the aperture and subtracting contribution by neighbors. The combination of these two methods increases the recovery accuracy of injection tests by (\textbf{some amount}).
 
+\keywords{exoplanets, instrumentation, K2, Kepler}
 \end{abstract}
 
 \section{Introduction}
@@ -31,17 +37,19 @@ There remain cases in which \textit{K2} detrending pipelines fail to achieve \te
 
 A thorough treatment of removing the intrumental noise requires an understanding of the source of the noise. Stellar motion relative to the pixel sensitivity variation causes fluctuation in the amount of light received by the telescope detector. In order to accurately fit a PSF model to multiple targets on the detector, it became necessary to generate a model for the pixel sensitivity variation of the CCD. 
 
-We did not set out to model the exact sensitivity of the \textit{Kepler} CCD, rather our goal was to simply characterize its contribution to the noise in \textit{K2} light curves. Light curves generated against this model are adequite to serve as well-understood sample targets on which to test detrending methods. To achieve this, we generated a model for the detector that included both inter-pixel sensitivity varation between pixels and intra-pixel sensitivity variation within each pixel. A stellar PSF was generated with a characteristic two-dimensional Gaussian shape and with covariance between $x$ and $y$ dimensions to capture PSF distortion due to incident light aberation on the \textit{Kepler} detector.
+We did not set out to model the exact sensitivity of the \textit{Kepler} CCD, rather our goal was to simply characterize its contribution to the noise in \textit{K2} light curves. Light curves generated against this model are adequite to serve as well-understood sample targets on which to test detrending methods \textbf{(show that the magnitude of noise is characteristic of \textit{K2} light curves)}. To achieve this, we generated a model for the detector that included both inter-pixel sensitivity varation between pixels and intra-pixel sensitivity variation within each pixel. A stellar PSF was generated with a characteristic two-dimensional Gaussian shape and with covariance between $x$ and $y$ dimensions to capture PSF distortion due to incident light aberation on the \textit{Kepler} detector. We define our mathematical model to be
 
 \[
-F(t) = \sum_{aperture} \iint_{pixel} [s(x,y)P(x,y)\tau(t)] dxdy 
+F(t) = \sum_{aperture} \iint_{pixel} [s(x,y)P(x,y)\tau(t)] dxdy, 
 \]
 
-Where $s(x,y)$ is the sensitivity variation function, modeled by a sum of power functions, and $P(x,y)$ is the PSF of the star, centered at $(x_0,y_0)$ with amplitude $A$. $\tau (t)$ is a simulated transit function.
+where $s(x,y)$ is the sensitivity variation function, modeled by a sum of power functions, and $P(x,y)$ is the PSF of the star, centered at $(x_0,y_0)$ with amplitude $A$. $\tau (t)$ is a simulated transit function. Thus, the model for flux received by our simulated star as a function of time is given by
 
 \[
-F(t) = \sum_{aperture} A\tau(t) \iint_{pixel} \sum_n a_n x^n e^{\frac{\left(x-x_0 \right)^2+\left( y-y_0 \right)^2}{2\sigma^2}} dxdy
+F(t) = \sum_{aperture} A\tau(t) \iint_{pixel} \sum_n a_n x^n e^{\frac{\left(x-x_0 \right)^2+\left( y-y_0 \right)^2}{2\sigma^2}} dxdy.
 \]
+
+Our model for the sensitivity variation was chosen to capture the same noise magnitude as real \textit{K2} targets. (\textbf{Here, plot the CDPP of raw \textit{K2} light curves as a function of $K_p\ Mag$ vs. CDPP of simulated light curves as a function of $K_p\ Mag$.})
 
 \section{Methods}
 
