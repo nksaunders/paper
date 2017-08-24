@@ -1,0 +1,61 @@
+\documentclass[]{article}
+\usepackage{amsmath}
+
+%opening
+\title{
+	Methods for Detrending Crowded Exoplanet Targets Observed by Drifting Space Telescopes
+	\begin{center}
+		\textbf{Draft}
+	\end{center}
+}
+
+\author{Nicholas Saunders, Rodrigo Luger}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+We present methods to improve the power of existing detrending pipelines for space telescope exoplanet targets. Using simulations to model both the sensitivity variation of the \textit{Kepler Space Telescope} detector and stellar targets traversing the CCD, we characterize the contribution of CCD sensitivity variation to the noise of \textit{K2} light curves. With these simulated light curves, we assess the detrending power of two methods, first: fitting an aperture around the stellar Point Spread Function (PSF) to maximize light received by the target and exludes contribution from neighbors, and second: fitting a PSF to each target in the aperture and subtracting contribution by neighbors. The combination of these two methods increases the recovery accuracy of injection tests by (\textbf{some amount}).
+
+\end{abstract}
+
+\section{Introduction}
+
+After the failure of two reaction wheels in 2011 and 2013, the \textit{Kepler Space Telescope} has continued to produce valuable data in its new configuration, \textit{K2} (\textbf{source}). However, due to the unstable pointing caused by the missing reaction wheels, targets have significant motion relative to the pixel sensitivity variation of the telescope detector (\textbf{source}). A number of attempts have been made to isolate and remove the instrumental noise from \textit{K2} data (\textbf{sources}), including the \texttt{EVEREST} pipeline, which can recover \textit{Kepler}-like accuracy in exoplanet light curves up the $K_p = 15$ (\textbf{source}).
+
+There remain cases in which \textit{K2} detrending pipelines fail to achieve \textit{Kepler}-like accuracy, in particular high magnitude stars and targets with bright neighbors (\textbf{source}). 
+
+\section{Characterizing Pixel Sensitivity Variation}
+
+A thorough treatment of removing the intrumental noise requires an understanding of the source of the noise. Stellar motion relative to the pixel sensitivity variation causes fluctuation in the amount of light received by the telescope detector. In order to accurately fit a PSF model to multiple targets on the detector, it became necessary to generate a model for the pixel sensitivity variation of the CCD. 
+
+We did not set out to model the exact sensitivity of the \textit{Kepler} CCD, rather our goal was to simply characterize its contribution to the noise in \textit{K2} light curves. Light curves generated against this model are adequite to serve as well-understood sample targets on which to test detrending methods. To achieve this, we generated a model for the detector that included both inter-pixel sensitivity varation between pixels and intra-pixel sensitivity variation within each pixel. A stellar PSF was generated with a characteristic two-dimensional Gaussian shape and with covariance between $x$ and $y$ dimensions to capture PSF distortion due to incident light aberation on the \textit{Kepler} detector.
+
+\[
+F(t) = \sum_{aperture} \iint_{pixel} [s(x,y)P(x,y)\tau(t)] dxdy 
+\]
+
+Where $s(x,y)$ is the sensitivity variation function, modeled by a sum of power functions, and $P(x,y)$ is the PSF of the star, centered at $(x_0,y_0)$ with amplitude $A$. $\tau (t)$ is a simulated transit function.
+
+\[
+F(t) = \sum_{aperture} A\tau(t) \iint_{pixel} \sum_n a_n x^n e^{\frac{\left(x-x_0 \right)^2+\left( y-y_0 \right)^2}{2\sigma^2}} dxdy
+\]
+
+\section{Methods}
+
+\subsection{Motion Simulation}
+
+\subsection{PSF-fitting}
+
+\subsection{Aperture-fitting}
+
+\section{Results}
+
+\section{Conclusion}
+
+
+
+
+\end{document}
