@@ -1,0 +1,10 @@
+\begin{thebibliography}{}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\href{#1}{#1}}
+
+\bibitem[{{Luger} {et~al.}(2017){Luger}, {Kruse}, {Foreman-Mackey}, {Agol}, \&
+  {Saunders}}]{2017arXiv170205488L}
+{Luger}, R., {Kruse}, E., {Foreman-Mackey}, D., {Agol}, E., \& {Saunders}, N.
+  2017, ArXiv e-prints, arXiv:1702.05488
+
+\end{thebibliography}
