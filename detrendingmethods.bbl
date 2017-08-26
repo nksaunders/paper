@@ -2,9 +2,19 @@
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\href{#1}{#1}}
 
+\bibitem[{Deming {et~al.}(2015)Deming, Knutson, Kammer, Fulton, Ingalls, Carey,
+  Burrows, Fortney, Todorov, Agol, Cowan, Desert, Fraine, Langton, Morley, \&
+  Showman}]{0004-637X-805-2-132}
+Deming, D., Knutson, H., Kammer, J., {et~al.} 2015, The Astrophysical Journal,
+  805, 132.
+\newblock \url{http://stacks.iop.org/0004-637X/805/i=2/a=132}
+
 \bibitem[{{Luger} {et~al.}(2017){Luger}, {Kruse}, {Foreman-Mackey}, {Agol}, \&
   {Saunders}}]{2017arXiv170205488L}
 {Luger}, R., {Kruse}, E., {Foreman-Mackey}, D., {Agol}, E., \& {Saunders}, N.
   2017, ArXiv e-prints, arXiv:1702.05488
+
+\bibitem[{{Vanderburg} \& {Johnson}(2014)}]{2014PASP..126..948V}
+{Vanderburg}, A., \& {Johnson}, J.~A. 2014, \pasp, 126, 948
 
 \end{thebibliography}
