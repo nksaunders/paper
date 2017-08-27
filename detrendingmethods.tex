@@ -22,19 +22,47 @@
 
 \begin{abstract}
 
-	We present methods to increase the effectiveness of existing de-trending pipelines for space telescope exoplanet targets, and focus our treatment on stars with bright neighbors or high motion relative to the CCD. Using simulations to model both the sensitivity variation of the \textit{Kepler Space Telescope} detector and stellar targets traversing the CCD, we characterize the contribution of CCD sensitivity variation to the noise of \textit{K2} light curves. With these simulated light curves, we assess the de-trending power of two methods, first: fitting an aperture around the stellar Point Spread Function (PSF) to maximize light received by the target and exclude contribution from neighbors, and second: fitting a mathematical PSF model to each target in the aperture and subtracting contribution by neighbors. The combination of these two methods increases the recovery accuracy of injection tests by (\textbf{some amount}). These methods can be applied to the light curves of \textit{K2} targets for existing and future campaigns, and will become particularly useful as \textit{Kepler} begins to run out of fuel. These methods can also be applied to future space telescope missions, such as \textit{TESS}, to improve detection and characterization of exoplanet candidates.
+	We present methods to increase the effectiveness of existing de-trending pipelines for space telescope exoplanet targets, and focus our treatment on stars with bright neighbors or high motion relative to the CCD. Using simulations to model both the sensitivity variation of the \textit{Kepler Space Telescope} detector and stellar targets traversing the CCD, we characterize the contribution of CCD sensitivity variation to the noise of \textit{K2} light curves. With these simulated light curves, we assess the de-trending power of two methods, first: fitting an aperture around the stellar Point Spread Function (PSF) to maximize light received by the target and exclude contribution from neighbors, and second: fitting a mathematical PSF model to each target in the aperture and subtracting contribution by neighbors. The combination of these two methods increases the recovery accuracy of injection tests by (\textit{some amount}). A python script to create custom, crowding-defined apertures for any space telescope exoplanet target has also been made available online (\textit{I think this would be cool to release with the paper}). These methods can be applied to the light curves of \textit{K2} targets for existing and future campaigns, and will become particularly useful as \textit{Kepler} begins to run out of fuel. These methods can also be applied to future space telescope missions, such as \textit{TESS}, to improve detection and characterization of exoplanet candidates.
 
 \end{abstract}
 
 \section{Introduction}
 
-After the failure of two reaction wheels in 2012 and 2013, the \textit{Kepler Space Telescope} has continued to produce valuable data in its new configuration, \textit{K2} (\textbf{source}). However, due to the unstable pointing caused by the missing reaction wheels, targets have significant motion relative to the pixel sensitivity variation of the telescope detector, creating noise in \textit{K2} light curves (\textbf{source}). A number of attempts have been made to isolate and remove the instrumental noise from \textit{K2} data (\textbf{sources}), including the EPIC Variability Extraction and Removal for Exoplanet Science Targets (\texttt{EVEREST}) pipeline, developed by \cite{2017arXiv170205488L}, which can recover \textit{Kepler}-like accuracy in exoplanet light curves up the $K_p = 15$.
+Despite the failure of two reaction wheels in 2012 and 2013, the \textit{Kepler Space Telescope} has continued to produce valuable data in its new configuration, \textit{K2}, with significantly higher precision than ground based telescopes \citep{2014PASP..126..398H}. However, due to the unstable pointing caused by the missing reaction wheels, targets have significant motion relative to the quantum sensitivity variation of the telescope detector, creating noise in \textit{K2} light curves (\textbf{source}). A number of attempts have been made to isolate and remove the instrumental noise from \textit{K2} data \citep{2015A&A...579A..19A, 0004-637X-806-1-30, 2015MNRAS.454.4159H, 2015MNRAS.447.2880A, 2016MNRAS.459.2408A}.
 
-There remain cases in which \textit{K2} de-trending pipelines fail to achieve \textit{Kepler}-like accuracy, in particular high magnitude stars and targets with bright neighbors \citep{2017arXiv170205488L}. Further, as the \textit{Kepler Space Telescope} runs out of fuel, its motion due to thruster fires is expected to become less predictable and the magnitude of targets' motion relative to the detector will increase. With higher motion, targets will traverse more regions of varied pixel sensitivity, contributing more noise to the light curves of \textit{K2} targets. Eventually, the telescope will enter a phase of constant drift, at which point targets will traverse many pixels across the detector and flux pollution from neighbors is likely. 
+There remain cases in which \textit{K2} de-trending pipelines fail to achieve \textit{Kepler}-like accuracy, particularly high magnitude stars and targets with bright neighbors \citep{2017arXiv170205488L}. Further, as the \textit{Kepler Space Telescope} runs out of fuel, its motion due to thruster fires is expected to become less predictable and the magnitude of targets' motion relative to the detector will increase. With higher motion, targets will traverse more regions of varied pixel sensitivity, contributing more noise to the light curves of \textit{K2} targets. Eventually, the telescope will enter a phase of constant drift, at which point targets will traverse many pixels across the detector and flux pollution from neighbors is likely. 
 
-Other de-trending pipelines, notably the \texttt{K2SFF} pipeline, developed by \cite{2014PASP..126..948V}, generate Gaussian fits to the stellar PSF to find the centroid position of targets. From this, motion relative to the detector can be backed out and used to de-trend \textit{K2} light curves. However, factors such as light aberration, pixel sensitivity variation, and imperfect PSF fitting can lead to uncertainty in the central pillar of these models: the motion of the star relative to the detector.
+Existing de-trending pipelines, notably the \texttt{K2SFF} pipeline, developed by \cite{2014PASP..126..948V}, generate Gaussian fits to the stellar PSF to find the centroid position of targets. From this, motion relative to the detector can be backed out and used to de-trend \textit{K2} light curves. However, factors such as light aberration, pixel sensitivity variation, and imperfect PSF fitting can lead to uncertainty in the central pillar of these models: the motion of the star relative to the detector.
 
-\texttt{EVEREST} utilizes a different method -- pixel level decorrelation (PLD), developed by \cite{0004-637X-805-2-132}. PLD seeks to correct noise generated by intra-pixel sensitivity variation independent of apparent motion of the star.
+The EPIC Variability Extraction and Removal for Exoplanet Science Targets (\texttt{EVEREST}) pipeline, developed by \cite{2016AJ....152..100L, 2017arXiv170205488L} utilizes a different method -- pixel level decorrelation (PLD), developed by \cite{0004-637X-805-2-132}. PLD seeks to remove noise generated by intra-pixel sensitivity variation independent of apparent motion of the star. This method is particularly effective for \textit{K2} light curves despite the magnitude of apparent motion being high, and \texttt{EVEREST} can recover \textit{Kepler}-like accuracy in exoplanet light curves for targets up to $K_p = 15$.
+
+\S 2 and \S 3 explore the issues of pixel sensitivity variation and crowding, respectively. \S 4 describes our methods to characterize and address these sources of noise: \S 4.1 focuses on PSF-fitting, \S 4.2 on Aperture-fitting, and \S 4.3 on Motion Removal. In \S 5, we discuss our results, and finally we draw our conclusions in \S 6.
+
+\section{Pixel Sensitivity Variation}
+
+Removal of instrumental noise requires a thorough understanding of its source. Stellar motion relative to the pixel sensitivity variation causes fluctuation in the amount of light received by the telescope detector. In order to accurately fit a PSF model to multiple targets on the detector, it became necessary to generate a model for the pixel sensitivity variation of the CCD.
+
+We did not set out to model the exact sensitivity of the \textit{Kepler} CCD, rather our goal was to simply characterize its contribution to the noise in \textit{K2} light curves. Light curves generated against this model are adequate to serve as well-understood sample targets on which to test de-trending methods \textit{(show that the magnitude of noise is characteristic of \textit{K2} light curves)}. To accurately represent the \textit{Kepler} CCD, we generated a model for the detector that included both inter-pixel sensitivity variation between pixels and intra-pixel sensitivity variation within each pixel.
+
+\subsection{PSF Model}
+
+A stellar PSF was generated with a characteristic two-dimensional Gaussian shape and with covariance between $x$ and $y$ dimensions to capture PSF distortion due to incident light aberration on the \textit{Kepler} detector. We define our mathematical model to be
+
+\[
+\tag{1}
+F(t) = \sum_{aperture} \iint_{pixel} [s(x,y)P(x,y)\tau(t)] dxdy,\\
+\]
+
+where $s(x,y)$ is the sensitivity variation function, modelled by a sum of power functions, and $P(x,y)$ is the PSF of the star, centered at $(x_0,y_0)$ with amplitude $A$. $\tau (t)$ is a simulated transit function. Thus, the model for flux received by our simulated star as a function of time is given by
+
+\[ 
+\tag{2}
+F(t) = \sum_{aperture} A\tau(t) \iint_{pixel} \sum_n a_n x^n e^{-\frac{\left(x-x_0 \right)^2+\left( y-y_0 \right)^2}{2\sigma^2}} dxdy. \\
+\]
+
+Our model for the sensitivity variation was chosen to capture the same noise magnitude as real \textit{K2} targets. (\textit{Here, plot the CDPP of raw \textit{K2} light curves as a function of $K_p\ Mag$ vs. CDPP of simulated light curves as a function of $K_p\ Mag$.}) The coefficients $a_n$ were determined to emulate the magnitude of sensitivity variation on the \textit{Kepler} CCD based on its contribution to the noise in \textit{K2} light curves.
+
+To best capture the characteristics of \textit{K2} data when analyzing the noise contributed by quantum sensitivity variation, our model also included two sources of noise -- photon and background noise. (\textit{More here about the sources of noise.})
 
 \section{Crowding}
 
@@ -43,60 +71,51 @@ A significant stumbling block of PLD arises when \textit{K2} targets are observe
 We define a crowding metric, $C$, as a quantitative measure of the significance of neighbor pollution in each pixel. 
 
 \[
-\tag{1}
+\tag{3}
 C = 1 - \frac{F_{target}}{F_{total}}
 \]
 
-\section{Pixel Sensitivity Variation}
+Applications of PLD have demonstrated that it is not well suited to handle targets with high values of $C$ in pixels containing flux from the target star. These cases suffer from overfitting at a higher rate and transit recovery accuracy is compromised significantly. A sample target and the crowding metric $C$ for each pixel is shown in Fig. 1.
 
-A thorough treatment of removing the instrumental noise requires an understanding of the source of the noise. Stellar motion relative to the pixel sensitivity variation causes fluctuation in the amount of light received by the telescope detector. In order to accurately fit a PSF model to multiple targets on the detector, it became necessary to generate a model for the pixel sensitivity variation of the CCD.
-
-We did not set out to model the exact sensitivity of the \textit{Kepler} CCD, rather our goal was to simply characterize its contribution to the noise in \textit{K2} light curves. Light curves generated against this model are adequate to serve as well-understood sample targets on which to test de-trending methods \textbf{(show that the magnitude of noise is characteristic of \textit{K2} light curves)}. To accurately represent the \textit{Kepler} CCD, we generated a model for the detector that included both inter-pixel sensitivity variation between pixels and intra-pixel sensitivity variation within each pixel.
-
-\subsection{PSF Model}
-
-A stellar PSF was generated with a characteristic two-dimensional Gaussian shape and with covariance between $x$ and $y$ dimensions to capture PSF distortion due to incident light aberration on the \textit{Kepler} detector. We define our mathematical model to be
-
-\[
-\tag{2}
-F(t) = \sum_{aperture} \iint_{pixel} [s(x,y)P(x,y)\tau(t)] dxdy,\\
-\]
-
-where $s(x,y)$ is the sensitivity variation function, modelled by a sum of power functions, and $P(x,y)$ is the PSF of the star, centered at $(x_0,y_0)$ with amplitude $A$. $\tau (t)$ is a simulated transit function. Thus, the model for flux received by our simulated star as a function of time is given by
-
-\[ 
-\tag{3}
-F(t) = \sum_{aperture} A\tau(t) \iint_{pixel} \sum_n a_n x^n e^{-\frac{\left(x-x_0 \right)^2+\left( y-y_0 \right)^2}{2\sigma^2}} dxdy. \\
-\]
-
-Our model for the sensitivity variation was chosen to capture the same noise magnitude as real \textit{K2} targets. (\textbf{Here, plot the CDPP of raw \textit{K2} light curves as a function of $K_p\ Mag$ vs. CDPP of simulated light curves as a function of $K_p\ Mag$.}) The coefficients $a_n$ were determined to emulate the magnitude of sensitivity variation on the \textit{Kepler} CCD based on its contribution to the noise in \textit{K2} light curves.
-
-To best capture the characteristics of \textit{K2} data, our model also included two sources of noise -- photon and background noise. (\textbf{More here about the sources of noise.})
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=.55]{cr.eps}
+	\caption{A single cadence from target EPIC 202072978, a $12^{\text{th}}$ magnitude exoplanet host and its $16^{\text{th}}$ magnitude neighbor (left), and the crowding metric $C$ in each pixel for this cadence, as defined in equation (3) (right).} 
+	\label{fig:crowding}
+\end{figure}
 
 \section{Methods}
 
 The two sources of noise presented above -- pixel crowding and detector sensitivity variation -- have been obstacles for \textit{K2} de-trending pipelines. In the following sections, we present methods to address both sources of noise and recovery more accurate light curves.
 
-\subsection{Aperture-fitting}
-
-The simplest solution to the issue of crowded apertures is to only consider pixels that contain the most flux from the desired target and exclude flux received by neighboring stars. The crowding metric in each pixel can be used to determine which pixels should be included to maximize target flux. (\textbf{I need to give this a more thorough treatment to determine exactly what value of $C$ is best to include within an aperture. To do so, I will perform aperture tests on a variety of targets and maximize injected transit recovery accuracy to constrain ideal values of $C$.}) In a process we refer to as aperture PLD (aPLD) (\textbf{Make sure someone else isn't already using this terminology}), we define an aperture based on the crowding metric in each pixel to maximize target flux. 
-
-Injection tests were performed by removing noise from simulated light curves with aPLD and measuring the transit
-depth of the de-trended light curve. Comparing this value to the injected depth, we determine the effectiveness of aPLD and constrain useful values of $C$. With our injection tests, we find that pixels with $C>0.3$ should be excluded to maximize the effectiveness of aPLD.
-
-
 \subsection{PSF-fitting}
 
 For some targets, particularly those with exceptionally close neighbors, defining an aperture around the central star can be difficult, because pixels containing flux pollution also contain important stellar signal. Exclusion of pixels above the prescribed crowding cutoff would render the remaining flux inadequate to thoroughly analyze transiting exoplanet targets. 
 
-We present a second method to remove unwanted neighbor signal: fitting each target in the frame with a Gaussian PSF model and subtracting the flux contributed by the neighbor from each pixel. This process involves constructing sums of $n$ PSF, where $n$ is the number of stars within the aperture, and minimizing $\chi^2$ between the model and data. $\chi^2$ is given by
+We present a second method to remove unwanted neighbor signal: fitting each target in the frame with a Gaussian PSF model and subtracting the flux contributed by the neighbor from each pixel. This process involves constructing sums of $n$ PSFs, where $n$ is the number of stars within the aperture, and minimizing $\chi^2$ between the model, $m_i$ and flux, $y_i$. $\chi^2$ is given by
 
 \[
 \tag{4}
-\chi^2 = \left( \frac{model-data}{error} \right)^2.
+\chi^2 = \sum_i \left( \frac{m_i-y_i}{\sigma_i} \right)^2.
 \]
 
-\subsection{Motion Removal (?)}
+Our model, defined in equation (2), was fit to each cadence of crowded \textit{K2} targets. 
+
+\subsection{Aperture-fitting}
+
+The simplest solution to the issue of crowded apertures is to only consider pixels that contain the most flux from the desired target and exclude flux received by neighboring stars. The crowding metric in each pixel can be used to determine which pixels should be included to maximize target flux. (\textit{I need to give this a more thorough treatment to determine exactly what value of $C$ is best to include within an aperture. To do so, I will perform aperture tests on a variety of targets and maximize injected transit recovery accuracy to constrain ideal values of $C$.}) In a process we refer to as aperture PLD (aPLD), we define an aperture based on the crowding metric in each pixel to maximize target flux. 
+
+Injection tests were performed by removing noise from simulated light curves with aPLD and measuring the transit
+depth of the de-trended light curve. Comparing this value to the injected depth, we determine the effectiveness of aPLD and constrain useful values of $C$. With our injection tests, we find that pixels with $C>0.3$ should be excluded to maximize the effectiveness of aPLD.
+
+\subsection{Motion Removal}
+
+\[
+\begin{aligned}
+x_0 = X(c) - v_x(c) \\  
+y_0 = Y(c) - v_y(c) \\
+\end{aligned}
+\]
 
 \section{Results}
 

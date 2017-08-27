@@ -4,44 +4,44 @@ The top-level auxiliary file: detrendingmethods.aux
 The style file: aasjournal.bst
 Database file #1: references.bib.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 3 entries,
+You've used 10 entries,
             3222 wiz_defined-function locations,
-            680 strings with 5415 characters,
-and the built_in function-call counts, 1505 in all, are:
-= -- 113
-> -- 133
+            738 strings with 7448 characters,
+and the built_in function-call counts, 5299 in all, are:
+= -- 408
+> -- 479
 < -- 1
-+ -- 44
-- -- 49
-* -- 137
-:= -- 286
-add.period$ -- 4
-call.type$ -- 3
-change.case$ -- 17
-chr.to.int$ -- 3
-cite$ -- 3
-duplicate$ -- 55
-empty$ -- 84
-format.name$ -- 53
-if$ -- 293
++ -- 162
+- -- 182
+* -- 493
+:= -- 993
+add.period$ -- 12
+call.type$ -- 10
+change.case$ -- 67
+chr.to.int$ -- 10
+cite$ -- 10
+duplicate$ -- 181
+empty$ -- 282
+format.name$ -- 187
+if$ -- 1039
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 3
-newline$ -- 15
-num.names$ -- 12
-pop$ -- 24
+missing$ -- 10
+newline$ -- 37
+num.names$ -- 40
+pop$ -- 90
 preamble$ -- 1
-purify$ -- 17
+purify$ -- 67
 quote$ -- 0
-skip$ -- 40
+skip$ -- 137
 stack$ -- 0
-substring$ -- 41
+substring$ -- 166
 swap$ -- 0
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 27
+type$ -- 90
 warning$ -- 0
-while$ -- 10
+while$ -- 36
 width$ -- 0
-write$ -- 36
+write$ -- 108
