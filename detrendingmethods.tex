@@ -10,7 +10,7 @@
 
 %opening
 \title{
-	Methods for Improved De-Trending of Exoplanet Targets: Bright Neighbors and Drifting Space Telescopes
+	Methods for Improved De-Trending of Exoplanet Targets: Crowded Apertures and Drifting Space Telescopes
 }
 
 \author{Nicholas Saunders \altaffilmark{1,2,3}, Rodrigo Luger \altaffilmark{1,2}}
@@ -44,7 +44,7 @@ We define a crowding metric, $C$, as a quantitative measure of the significance 
 
 \[
 \tag{1}
-C = \frac{F_{target}}{F_{total}}
+C = 1 - \frac{F_{target}}{F_{total}}
 \]
 
 \section{Pixel Sensitivity Variation}
@@ -79,11 +79,22 @@ The two sources of noise presented above -- pixel crowding and detector sensitiv
 
 \subsection{Aperture-fitting}
 
-The simplest solution to this issue is to only consider pixels that contain the most flux from the desired target and exclude flux received by neighboring stars. The crowding metric in each pixel can be used to determine which pixels should be included to maximize target flux. (\textbf{I need to give this a more thorough treatment to determine exactly what value of $C$ is best to include within an aperture. To do so, I will perform aperture tests on a variety of targets and maximize injected transit recovery accuracy to constrain ideal values of $C$.}) Injection tests were performed...
+The simplest solution to the issue of crowded apertures is to only consider pixels that contain the most flux from the desired target and exclude flux received by neighboring stars. The crowding metric in each pixel can be used to determine which pixels should be included to maximize target flux. (\textbf{I need to give this a more thorough treatment to determine exactly what value of $C$ is best to include within an aperture. To do so, I will perform aperture tests on a variety of targets and maximize injected transit recovery accuracy to constrain ideal values of $C$.}) In a process we refer to as aperture PLD (aPLD) (\textbf{Make sure someone else isn't already using this terminology}), we define an aperture based on the crowding metric in each pixel to maximize target flux. 
 
+Injection tests were performed by removing noise from simulated light curves with aPLD and measuring the transit
+depth of the de-trended light curve. Comparing this value to the injected depth, we determine the effectiveness of aPLD and constrain useful values of $C$. With our injection tests, we find that pixels with $C>0.3$ should be excluded to maximize the effectiveness of aPLD.
 
 
 \subsection{PSF-fitting}
+
+For some targets, particularly those with exceptionally close neighbors, defining an aperture around the central star can be difficult, because pixels containing flux pollution also contain important stellar signal. Exclusion of pixels above the prescribed crowding cutoff would render the remaining flux inadequate to thoroughly analyze transiting exoplanet targets. 
+
+We present a second method to remove unwanted neighbor signal: fitting each target in the frame with a Gaussian PSF model and subtracting the flux contributed by the neighbor from each pixel. This process involves constructing sums of $n$ PSF, where $n$ is the number of stars within the aperture, and minimizing $\chi^2$ between the model and data. $\chi^2$ is given by
+
+\[
+\tag{4}
+\chi^2 = \left( \frac{model-data}{error} \right)^2.
+\]
 
 \subsection{Motion Removal (?)}
 
