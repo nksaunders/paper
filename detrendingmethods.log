@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 AUG 2017 16:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  28 AUG 2017 17:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -309,14 +309,33 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 39.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 41.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 39.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 41.
  [2] [3]
+Package epstopdf Info: Source file: <images/rawcdpp.eps>
+(epstopdf)                    date: 2017-08-28 15:04:12
+(epstopdf)                    size: 35948 bytes
+(epstopdf)             Output file: <images/rawcdpp-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-08-28 15:04:38
+(epstopdf)                    size: 19039 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/rawcdpp-eps-convert
+ed-to.pdf images/rawcdpp.eps>
+(epstopdf)             \includegraphics on input line 69.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/rawcdpp-eps-converted-to.pdf, id=23, 722.7pt x 361.35pt>
+File: images/rawcdpp-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/rawcdpp-eps-converted-to.pdf>
+Package pdftex.def Info: images/rawcdpp-eps-converted-to.pdf used on input line
+ 69.
+(pdftex.def)             Requested size: 433.62334pt x 216.81168pt.
+ [4 <./images/rawcdpp-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/cr.eps>
 (epstopdf)                    date: 2017-08-27 16:20:45
 (epstopdf)                    size: 3810428 bytes
@@ -325,27 +344,26 @@ Package epstopdf Info: Source file: <images/cr.eps>
 (epstopdf)                    size: 18005 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/cr-eps-converted-to
 .pdf images/cr.eps>
-(epstopdf)             \includegraphics on input line 82.
+(epstopdf)             \includegraphics on input line 95.
 Package epstopdf Info: Output file is already uptodate.
-
-<images/cr-eps-converted-to.pdf, id=27, 794.97pt x 361.35pt>
+ <images/cr-eps-converted-to.pdf, id=73, 794.97pt x 361.35pt>
 File: images/cr-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/cr-eps-converted-to.pdf>
-Package pdftex.def Info: images/cr-eps-converted-to.pdf used on input line 82.
+Package pdftex.def Info: images/cr-eps-converted-to.pdf used on input line 95.
 (pdftex.def)             Requested size: 437.23485pt x 198.74312pt.
- [4 <./images/cr-eps-converted-to.pdf>]
-[5] [6] (./detrendingmethods.bbl) [7
+ [5 <./images/cr-eps-converted-to.pdf>]
+[6] [7] (./detrendingmethods.bbl) [8
 
 ] (./detrendingmethods.aux) ) 
 Here is how much of TeX's memory you used:
- 3926 strings out of 492995
- 53336 string characters out of 6132704
- 120902 words of memory out of 5000000
- 7411 multiletter control sequences out of 15000+600000
+ 3935 strings out of 492995
+ 53597 string characters out of 6132704
+ 121106 words of memory out of 5000000
+ 7419 multiletter control sequences out of 15000+600000
  12048 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,7n,28p,1528b,269s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,8n,28p,1528b,271s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publ
@@ -362,10 +380,10 @@ y10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.p
 fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pf
 b>
-Output written on detrendingmethods.pdf (7 pages, 189993 bytes).
+Output written on detrendingmethods.pdf (8 pages, 207764 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
+ 156 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
