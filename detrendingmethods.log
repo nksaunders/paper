@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  28 AUG 2017 17:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  1 SEP 2017 12:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -318,15 +318,20 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 41.
  [2] [3]
 Package epstopdf Info: Source file: <images/rawcdpp.eps>
-(epstopdf)                    date: 2017-08-28 15:04:12
-(epstopdf)                    size: 35948 bytes
+(epstopdf)                    date: 2017-09-01 12:44:34
+(epstopdf)                    size: 35982 bytes
 (epstopdf)             Output file: <images/rawcdpp-eps-converted-to.pdf>
 (epstopdf)                    date: 2017-08-28 15:04:38
 (epstopdf)                    size: 19039 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/rawcdpp-eps-convert
 ed-to.pdf images/rawcdpp.eps>
 (epstopdf)             \includegraphics on input line 69.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=images/rawcdpp-eps-converted-to.pdf images/rawcdp
+p.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <images/rawcdpp-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-09-01 12:45:36
+(epstopdf)                    size: 19041 bytes.
 
 <images/rawcdpp-eps-converted-to.pdf, id=23, 722.7pt x 361.35pt>
 File: images/rawcdpp-eps-converted-to.pdf Graphic file (type pdf)
@@ -380,7 +385,7 @@ y10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.p
 fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pf
 b>
-Output written on detrendingmethods.pdf (8 pages, 207764 bytes).
+Output written on detrendingmethods.pdf (8 pages, 207766 bytes).
 PDF statistics:
  156 PDF objects out of 1000 (max. 8388607)
  77 compressed objects within 1 object stream
