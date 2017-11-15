@@ -1,0 +1,59 @@
+\begin{thebibliography}{}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\href{#1}{#1}}
+
+\bibitem[{{Aigrain} {et~al.}(2015){Aigrain}, {Hodgkin}, {Irwin}, {Lewis}, \&
+  {Roberts}}]{2015MNRAS.447.2880A}
+{Aigrain}, S., {Hodgkin}, S.~T., {Irwin}, M.~J., {Lewis}, J.~R., \& {Roberts},
+  S.~J. 2015, \mnras, 447, 2880
+
+\bibitem[{{Aigrain} {et~al.}(2016){Aigrain}, {Parviainen}, \&
+  {Pope}}]{2016MNRAS.459.2408A}
+{Aigrain}, S., {Parviainen}, H., \& {Pope}, B.~J.~S. 2016, \mnras, 459, 2408
+
+\bibitem[{{Armstrong} {et~al.}(2015){Armstrong}, {Kirk}, {Lam}, {McCormac},
+  {Walker}, {Brown}, {Osborn}, {Pollacco}, \& {Spake}}]{2015A&A...579A..19A}
+{Armstrong}, D.~J., {Kirk}, J., {Lam}, K.~W.~F., {et~al.} 2015, \aap, 579, A19
+
+\bibitem[{{Christiansen} {et~al.}(2012){Christiansen}, {Jenkins}, {Caldwell},
+  {Burke}, {Tenenbaum}, {Seader}, {Thompson}, {Barclay}, {Clarke}, {Li},
+  {Smith}, {Stumpe}, {Twicken}, \& {Van Cleve}}]{2012PASP..124.1279C}
+{Christiansen}, J.~L., {Jenkins}, J.~M., {Caldwell}, D.~A., {et~al.} 2012,
+  \pasp, 124, 1279
+
+\bibitem[{Deming {et~al.}(2015)Deming, Knutson, Kammer, Fulton, Ingalls, Carey,
+  Burrows, Fortney, Todorov, Agol, Cowan, Desert, Fraine, Langton, Morley, \&
+  Showman}]{0004-637X-805-2-132}
+Deming, D., Knutson, H., Kammer, J., {et~al.} 2015, The Astrophysical Journal,
+  805, 132.
+\newblock \url{http://stacks.iop.org/0004-637X/805/i=2/a=132}
+
+\bibitem[{{Howell} {et~al.}(2014){Howell}, {Sobeck}, {Haas}, {Still},
+  {Barclay}, {Mullally}, {Troeltzsch}, {Aigrain}, {Bryson}, {Caldwell},
+  {Chaplin}, {Cochran}, {Huber}, {Marcy}, {Miglio}, {Najita}, {Smith},
+  {Twicken}, \& {Fortney}}]{2014PASP..126..398H}
+{Howell}, S.~B., {Sobeck}, C., {Haas}, M., {et~al.} 2014, \pasp, 126, 398
+
+\bibitem[{{Huang} {et~al.}(2015){Huang}, {Penev}, {Hartman}, {Bakos}, {Bhatti},
+  {Domsa}, \& {de Val-Borro}}]{2015MNRAS.454.4159H}
+{Huang}, C.~X., {Penev}, K., {Hartman}, J.~D., {et~al.} 2015, \mnras, 454, 4159
+
+\bibitem[{{Luger} {et~al.}(2016){Luger}, {Agol}, {Kruse}, {Barnes}, {Becker},
+  {Foreman-Mackey}, \& {Deming}}]{2016AJ....152..100L}
+{Luger}, R., {Agol}, E., {Kruse}, E., {et~al.} 2016, \aj, 152, 100
+
+\bibitem[{{Luger} {et~al.}(2017){Luger}, {Kruse}, {Foreman-Mackey}, {Agol}, \&
+  {Saunders}}]{2017arXiv170205488L}
+{Luger}, R., {Kruse}, E., {Foreman-Mackey}, D., {Agol}, E., \& {Saunders}, N.
+  2017, ArXiv e-prints, arXiv:1702.05488
+
+\bibitem[{Lund {et~al.}(2015)Lund, Handberg, Davies, Chaplin, \&
+  Jones}]{0004-637X-806-1-30}
+Lund, M.~N., Handberg, R., Davies, G.~R., Chaplin, W.~J., \& Jones, C.~D. 2015,
+  The Astrophysical Journal, 806, 30.
+\newblock \url{http://stacks.iop.org/0004-637X/806/i=1/a=30}
+
+\bibitem[{{Vanderburg} \& {Johnson}(2014)}]{2014PASP..126..948V}
+{Vanderburg}, A., \& {Johnson}, J.~A. 2014, \pasp, 126, 948
+
+\end{thebibliography}
