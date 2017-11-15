@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex skope"] 1510717242 "skope.aux" "skope.bbl" "skope" 1510717373
-  "./aasjournal.bst" 1503695624 34618 459689a02a97161f219d1474d195febc ""
-  "references.bib" 1503958474 10167 082b22232a9dcb392a2e12ab48d188e9 ""
-  "skope.aux" 1510717244 3582 7caefea8fc86a5ac57da89b111b80754 ""
-  "skopeNotes.bib" 1510717243 0 d41d8cd98f00b204e9800998ecf8427e ""
+["bibtex skope"] 1510717242 "skope.aux" "skope.bbl" "skope" 1510766445
+  "./aasjournal.bst" 1510766083 34618 459689a02a97161f219d1474d195febc ""
+  "references.bib" 1510766083 10167 082b22232a9dcb392a2e12ab48d188e9 ""
+  "skope.aux" 1510766444 3582 7caefea8fc86a5ac57da89b111b80754 ""
+  "skopeNotes.bib" 1510766444 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
   "skope.bbl"
   "skope.blg"
-["pdflatex"] 1510717242 "skope.tex" "skope.pdf" "skope" 1510717373
+["pdflatex"] 1510766443 "skope.tex" "skope.pdf" "skope" 1510766445
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -107,14 +107,14 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "emulateapj.cls" 1503698581 64998 c5e4a6efcd2b70b2dfd593f44ef56530 ""
-  "images/cr.eps" 1503876045 3810428 d3d17093fb1a7ccebbf1eaa25e9ce9bc ""
-  "images/rawcdpp.eps" 1504295074 35982 440755b71df4760eb4c377e25ceda8bd ""
-  "skope.aux" 1510717244 3582 7caefea8fc86a5ac57da89b111b80754 ""
-  "skope.bbl" 1510717242 2837 d27c24f6f48ab5d280f9fd606aa7a9d3 "bibtex skope"
-  "skope.tex" 1510717136 13152 ef7e229d9717a0abed8e65ea4a3e0686 ""
+  "emulateapj.cls" 1510766083 64998 c5e4a6efcd2b70b2dfd593f44ef56530 ""
+  "images/cr.eps" 1510766103 3810428 d3d17093fb1a7ccebbf1eaa25e9ce9bc ""
+  "images/rawcdpp.eps" 1510766103 35982 440755b71df4760eb4c377e25ceda8bd ""
+  "skope.aux" 1510766444 3582 7caefea8fc86a5ac57da89b111b80754 ""
+  "skope.bbl" 1510766083 2837 d27c24f6f48ab5d280f9fd606aa7a9d3 "bibtex skope"
+  "skope.tex" 1510766440 13152 ef7e229d9717a0abed8e65ea4a3e0686 ""
   (generated)
-  "skope.aux"
-  "skope.log"
   "skope.pdf"
+  "skope.aux"
   "skopeNotes.bib"
+  "skope.log"
