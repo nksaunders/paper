@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex skope"] 1510864332 "skope.aux" "skope.bbl" "skope" 1510864333
+["bibtex skope"] 1510868238 "skope.aux" "skope.bbl" "skope" 1510868296
   "./aasjournal.bst" 1510766083 34618 459689a02a97161f219d1474d195febc ""
   "references.bib" 1510766083 10167 082b22232a9dcb392a2e12ab48d188e9 ""
-  "skope.aux" 1510864333 3756 642bbe1bfc97e188ae7134da6a9fd30b ""
-  "skopeNotes.bib" 1510864332 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "skope.aux" 1510868296 4101 1a8230276e92cc3624ea96db729dcd9a ""
+  "skopeNotes.bib" 1510868295 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
   "skope.bbl"
   "skope.blg"
-["pdflatex"] 1510864332 "skope.tex" "skope.pdf" "skope" 1510864333
+["pdflatex"] 1510868295 "skope.tex" "skope.pdf" "skope" 1510868296
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -110,13 +110,14 @@
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
   "emulateapj.cls" 1510766083 64998 c5e4a6efcd2b70b2dfd593f44ef56530 ""
+  "images/1xmotion.png" 1510865507 390594 9983fb5e3117e6c59aba0d72ddfdb971 ""
   "images/cr.eps" 1510766103 3810428 d3d17093fb1a7ccebbf1eaa25e9ce9bc ""
-  "images/rawcdpp.eps" 1510766103 35982 440755b71df4760eb4c377e25ceda8bd ""
-  "skope.aux" 1510864333 3756 642bbe1bfc97e188ae7134da6a9fd30b ""
-  "skope.bbl" 1510864332 2837 d27c24f6f48ab5d280f9fd606aa7a9d3 "bibtex skope"
-  "skope.tex" 1510864330 13100 cb3431909c88fb2a2805894cabd8c7a7 ""
+  "images/nomotion.png" 1510865488 210441 79f9e4a0730d81383d2f4892fc38eccf ""
+  "skope.aux" 1510868296 4101 1a8230276e92cc3624ea96db729dcd9a ""
+  "skope.bbl" 1510868238 2837 d27c24f6f48ab5d280f9fd606aa7a9d3 "bibtex skope"
+  "skope.tex" 1510868294 13655 2372fc3b224d0850e36ec50cdafab7f9 ""
   (generated)
-  "skope.aux"
   "skope.pdf"
-  "skopeNotes.bib"
   "skope.log"
+  "skope.aux"
+  "skopeNotes.bib"

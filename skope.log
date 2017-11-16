@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  16 NOV 2017 12:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  16 NOV 2017 13:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -364,7 +364,11 @@ Class revtex4-1 Info: multicol was not loaded (OK!) on input line 10.
 LaTeX Warning: Unused global option(s):
     [12pt,preprint].
 
-(./skope.aux)
+(./skope.aux
+
+LaTeX Warning: Label `fig:nomotion' multiply defined.
+
+)
 \openout1 = `skope.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -379,8 +383,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
-
-(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count125
 \scratchdimen=\dimen133
@@ -426,29 +429,24 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
  [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (12.68176pt too wide) detected at line 62
-\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = [] \OM
-L/cmm/m/it/10 A^^\\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) [] [][] 
-[] \OML/cmm/m/it/10 a[]x[]e[]dxdy:[] 
- []
+<images/nomotion.png, id=20, 469.755pt x 354.6048pt>
+File: images/nomotion.png Graphic file (type png)
+ <use images/nomotion.png>
+Package pdftex.def Info: images/nomotion.png used on input line 75.
+(pdftex.def)             Requested size: 245.26653pt x 185.14224pt.
 
-Package epstopdf Info: Source file: <images/rawcdpp.eps>
-(epstopdf)                    date: 2017-11-15 09:15:03
-(epstopdf)                    size: 35982 bytes
-(epstopdf)             Output file: <images/rawcdpp-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-11-15 09:15:03
-(epstopdf)                    size: 19041 bytes
-(epstopdf)             Command: <repstopdf --outfile=images/rawcdpp-eps-convert
-ed-to.pdf images/rawcdpp.eps>
-(epstopdf)             \includegraphics on input line 68.
-Package epstopdf Info: Output file is already uptodate.
-<images/rawcdpp-eps-converted-to.pdf, id=20, 722.7pt x 361.35pt>
-File: images/rawcdpp-eps-converted-to.pdf Graphic file (type pdf)
 
-<use images/rawcdpp-eps-converted-to.pdf>
-Package pdftex.def Info: images/rawcdpp-eps-converted-to.pdf used on input line
- 68.
-(pdftex.def)             Requested size: 245.26653pt x 122.6313pt.
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/1xmotion.png, id=22, 469.755pt x 348.3414pt>
+File: images/1xmotion.png Graphic file (type png)
+ <use images/1xmotion.png>
+Package pdftex.def Info: images/1xmotion.png used on input line 82.
+(pdftex.def)             Requested size: 245.26653pt x 181.87207pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 Package epstopdf Info: Source file: <images/cr.eps>
 (epstopdf)                    date: 2017-11-15 09:15:03
 (epstopdf)                    size: 3810428 bytes
@@ -457,51 +455,67 @@ Package epstopdf Info: Source file: <images/cr.eps>
 (epstopdf)                    size: 18005 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/cr-eps-converted-to
 .pdf images/cr.eps>
-(epstopdf)             \includegraphics on input line 94.
+(epstopdf)             \includegraphics on input line 108.
 Package epstopdf Info: Output file is already uptodate.
-
-<images/cr-eps-converted-to.pdf, id=21, 794.97pt x 361.35pt>
+<images/cr-eps-converted-to.pdf, id=23, 794.97pt x 361.35pt>
 File: images/cr-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/cr-eps-converted-to.pdf>
-Package pdftex.def Info: images/cr-eps-converted-to.pdf used on input line 94.
+Package pdftex.def Info: images/cr-eps-converted-to.pdf used on input line 108.
+
 (pdftex.def)             Requested size: 245.26653pt x 111.4825pt.
- [2 <./images/rawcdpp-eps-converted-to.pdf> <./images/cr-eps-converted-to.pdf>]
- (./skope.bbl [3]) [4] (./skope.aux) ) 
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2 <./images/nomotion.png> <./images/1xmotion.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 113.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 113.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
+(./skope.bbl [3 <./images/cr-eps-converted-to.pdf>]) [4] (./skope.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5505 strings out of 492995
- 75197 string characters out of 6132704
- 160489 words of memory out of 5000000
- 8959 multiletter control sequences out of 15000+600000
+ 5510 strings out of 492995
+ 75241 string characters out of 6132704
+ 159528 words of memory out of 5000000
+ 8962 multiletter control sequences out of 15000+600000
  13401 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,8n,29p,1364b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2017/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2017/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10
-.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.p
-fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pf
-b>
-Output written on skope.pdf (4 pages, 277052 bytes).
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pf
+b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pf
+b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
+r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
+l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
+/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
+17/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2017/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2017/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on skope.pdf (4 pages, 813648 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
+ 128 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
