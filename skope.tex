@@ -122,6 +122,18 @@ The two sources of noise presented above -- pixel crowding and detector sensitiv
 
 To de-trend our synthetic light curves, we used a variant of the PLD method applied in the \texttt{EVEREST} pipeline. We included a Gaussian Process (GP) to capture and retain the astrophysical signal of the synthetic host star.
 
+\[
+\frac{\partial\mathcal{L}}{\partial w} = 0 \\
+\]
+
+\[
+=\frac{\partial}{\partial w} \left[ \left(y-Xw \right)^T \Sigma^{-1}\left(y-Xw \right) \right] \\
+\]
+
+\[
+\Rightarrow w = (X^T\Sigma^{-1}X)^{-1}(X^T\Sigma^{-1}y) \\
+\]
+
 \subsection{PSF-fitting}
 
 For some targets, particularly those with exceptionally close neighbors, defining an aperture around the central star can be difficult, because pixels containing flux pollution also contain important stellar signal. Exclusion of pixels above the prescribed crowding cutoff would render the remaining flux inadequate to thoroughly analyze transiting exoplanet targets.
