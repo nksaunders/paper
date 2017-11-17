@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  16 NOV 2017 19:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  16 NOV 2017 19:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -484,10 +484,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5510 strings out of 492995
- 75241 string characters out of 6132704
+ 5511 strings out of 492995
+ 75249 string characters out of 6132704
  159528 words of memory out of 5000000
- 8962 multiletter control sequences out of 15000+600000
+ 8963 multiletter control sequences out of 15000+600000
  13401 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,8n,29p,1364b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -512,7 +512,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2017/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on skope.pdf (4 pages, 815521 bytes).
+Output written on skope.pdf (4 pages, 816251 bytes).
 PDF statistics:
  128 PDF objects out of 1000 (max. 8388607)
  80 compressed objects within 1 object stream
