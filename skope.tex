@@ -122,8 +122,10 @@ The two sources of noise presented above -- pixel crowding and detector sensitiv
 
 To de-trend our synthetic light curves, we used a variant of the PLD method applied in the \texttt{EVEREST} pipeline. We included a Gaussian Process (GP) to capture and retain the astrophysical signal of the synthetic host star.
 
+The likelihood ($\mathcal{L}$) of our model capturing the true signal of the star is captured closely by a Gaussian distribution. By solving for the derivative of the natural log of this likelihood, we locate the distribution peak and our best model parameters.
+
 \[
-\mathcal{L} = \exp{\left(\frac{y-Xw}{\Sigma} \right)^2} \\
+\mathcal{L} = \exp{\left(\frac{y-Xw}{2\Sigma} \right)^2} \\
 \]
 
 \[
