@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex skope"] 1510868238 "skope.aux" "skope.bbl" "skope" 1511140017
+["bibtex skope"] 1510868238 "skope.aux" "skope.bbl" "skope" 1511722395
   "./aasjournal.bst" 1510766083 34618 459689a02a97161f219d1474d195febc ""
   "references.bib" 1510766083 10167 082b22232a9dcb392a2e12ab48d188e9 ""
-  "skope.aux" 1511140016 4101 1a8230276e92cc3624ea96db729dcd9a ""
-  "skopeNotes.bib" 1511140015 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "skope.aux" 1511722237 4101 1a8230276e92cc3624ea96db729dcd9a ""
+  "skopeNotes.bib" 1511722236 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
-  "skope.bbl"
   "skope.blg"
-["pdflatex"] 1511140015 "skope.tex" "skope.pdf" "skope" 1511140017
+  "skope.bbl"
+["pdflatex"] 1511722235 "skope.tex" "skope.pdf" "skope" 1511722395
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -34,6 +34,7 @@
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti8.tfm" 1480098701 1504 1747189e0441d1c18f3ea56fafc1c480 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti9.tfm" 1480098701 1476 cccc6cc4935c18ec3d5623b77ecb8b74 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm" 1480098701 768 1321e9409b4137d6fb428ac9dc956269 ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm" 1480098701 768 d7b9a2629a0c353102ad947dc9221d49 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm" 1480098711 520 82a3d37183f34b6eb363a161dfc002c2 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/latex-fonts/lasy5.tfm" 1480098711 520 d082ac03a1087bc1ec2a06e24a9f68c0 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm" 1480098711 520 4889cce2180234b97cad636b6039c722 ""
@@ -61,6 +62,7 @@
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1480098733 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb" 1480098733 35660 fb24af7afbadb71801619f1415838111 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1480098733 31099 c85edf1dd5b9e826d67c9c7293b6786c ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb" 1480098733 24287 6b803fa9eb1ddff9112e00519b09dd9e ""
   "/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1480098806 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2017/texmf-dist/tex/generic/epsf/epsf.sty" 1480098813 27123 4572e7b856182a1e6e9df1c7cc21de80 ""
   "/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1480098815 7612 729a8cc22a1ee0029997c7f74717ae05 ""
@@ -109,15 +111,15 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
+  "cr.eps" 0 -1 0 ""
   "emulateapj.cls" 1510766083 64998 c5e4a6efcd2b70b2dfd593f44ef56530 ""
   "images/1xmotion.png" 1510865507 390594 9983fb5e3117e6c59aba0d72ddfdb971 ""
-  "images/cr.eps" 1510766103 3810428 d3d17093fb1a7ccebbf1eaa25e9ce9bc ""
   "images/nomotion.png" 1510865488 210441 79f9e4a0730d81383d2f4892fc38eccf ""
-  "skope.aux" 1511140016 4101 1a8230276e92cc3624ea96db729dcd9a ""
+  "skope.aux" 1511722237 4101 1a8230276e92cc3624ea96db729dcd9a ""
   "skope.bbl" 1510868238 2837 d27c24f6f48ab5d280f9fd606aa7a9d3 "bibtex skope"
-  "skope.tex" 1511140014 14310 f12c2b58de84c0dd5f38a097035cdabc ""
+  "skope.tex" 1511720935 14315 24772262416036fe87993858fa4ba523 ""
   (generated)
-  "skope.aux"
-  "skopeNotes.bib"
   "skope.pdf"
+  "skopeNotes.bib"
+  "skope.aux"
   "skope.log"
