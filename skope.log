@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  26 NOV 2017 10:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  26 NOV 2017 10:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -447,27 +447,23 @@ Package pdftex.def Info: images/1xmotion.png used on input line 82.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: File `cr.eps' not found on input line 108.
-
-Package epstopdf Info: Source file: <cr.eps>
-(epstopdf)             Output file: <cr-eps-converted-to.pdf>
-(epstopdf)             Command: <repstopdf --outfile=cr-eps-converted-to.pdf cr
-.eps>
+Package epstopdf Info: Source file: <images/cr.eps>
+(epstopdf)                    date: 2017-11-15 09:15:03
+(epstopdf)                    size: 3810428 bytes
+(epstopdf)             Output file: <images/cr-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-11-15 09:15:03
+(epstopdf)                    size: 18005 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/cr-eps-converted-to
+.pdf images/cr.eps>
 (epstopdf)             \includegraphics on input line 108.
 Package epstopdf Info: Output file is already uptodate.
+<images/cr-eps-converted-to.pdf, id=23, 794.97pt x 361.35pt>
+File: images/cr-eps-converted-to.pdf Graphic file (type pdf)
 
-! Package pdftex.def Error: File `cr-eps-converted-to.pdf' not found.
+<use images/cr-eps-converted-to.pdf>
+Package pdftex.def Info: images/cr-eps-converted-to.pdf used on input line 108.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.108 ...ludegraphics[width=1.0\linewidth]{cr.eps}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+(pdftex.def)             Requested size: 245.26653pt x 111.4825pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -482,17 +478,17 @@ LaTeX Warning: A float is stuck (cannot be placed) on input line 113.
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
-(./skope.bbl [3]) [4] (./skope.aux)
+(./skope.bbl [3 <./images/cr-eps-converted-to.pdf>]) [4] (./skope.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5508 strings out of 492995
- 75117 string characters out of 6132704
- 161528 words of memory out of 5000000
- 8959 multiletter control sequences out of 15000+600000
- 13569 words of font info for 56 fonts, out of 8000000 for 9000
+ 5510 strings out of 492995
+ 75241 string characters out of 6132704
+ 160528 words of memory out of 5000000
+ 8962 multiletter control sequences out of 15000+600000
+ 13401 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,8n,29p,1364b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
@@ -515,12 +511,11 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2017/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2017/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2017/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on skope.pdf (4 pages, 805668 bytes).
+st/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on skope.pdf (4 pages, 816450 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
+ 128 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
