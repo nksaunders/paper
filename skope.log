@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 NOV 2017 14:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 NOV 2017 15:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -487,10 +487,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 (./skope.bbl [4 <./images/detmotion.png>]) [5] (./skope.aux) ) 
 Here is how much of TeX's memory you used:
- 5535 strings out of 492995
- 75648 string characters out of 6132704
+ 5536 strings out of 492995
+ 75656 string characters out of 6132704
  161545 words of memory out of 5000000
- 8984 multiletter control sequences out of 15000+600000
+ 8985 multiletter control sequences out of 15000+600000
  13661 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,8n,29p,1364b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -515,7 +515,7 @@ public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmti8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmtt10.pfb>
-Output written on skope.pdf (5 pages, 2507487 bytes).
+Output written on skope.pdf (5 pages, 2508030 bytes).
 PDF statistics:
  131 PDF objects out of 1000 (max. 8388607)
  79 compressed objects within 1 object stream
