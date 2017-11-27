@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 NOV 2017 12:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 NOV 2017 14:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -364,11 +364,7 @@ Class revtex4-1 Info: multicol was not loaded (OK!) on input line 10.
 LaTeX Warning: Unused global option(s):
     [12pt,preprint].
 
-(./skope.aux
-
-LaTeX Warning: Label `fig:nomotion' multiply defined.
-
-)
+(./skope.aux)
 \openout1 = `skope.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -383,7 +379,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
- (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count125
 \scratchdimen=\dimen133
@@ -441,12 +438,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <images/1xmotion.png, id=22, 469.755pt x 348.3414pt>
 File: images/1xmotion.png Graphic file (type png)
  <use images/1xmotion.png>
-Package pdftex.def Info: images/1xmotion.png used on input line 82.
+Package pdftex.def Info: images/1xmotion.png used on input line 84.
 (pdftex.def)             Requested size: 245.26653pt x 181.87207pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[2 <./images/nomotion.png> <./images/1xmotion.png>]
 Package epstopdf Info: Source file: <images/cr.eps>
 (epstopdf)                    date: 2017-11-15 09:15:03
 (epstopdf)                    size: 3810428 bytes
@@ -455,67 +453,72 @@ Package epstopdf Info: Source file: <images/cr.eps>
 (epstopdf)                    size: 18005 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/cr-eps-converted-to
 .pdf images/cr.eps>
-(epstopdf)             \includegraphics on input line 108.
+(epstopdf)             \includegraphics on input line 110.
 Package epstopdf Info: Output file is already uptodate.
-<images/cr-eps-converted-to.pdf, id=23, 794.97pt x 361.35pt>
+
+<images/cr-eps-converted-to.pdf, id=34, 794.97pt x 361.35pt>
 File: images/cr-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/cr-eps-converted-to.pdf>
-Package pdftex.def Info: images/cr-eps-converted-to.pdf used on input line 108.
+Package pdftex.def Info: images/cr-eps-converted-to.pdf used on input line 110.
 
 (pdftex.def)             Requested size: 245.26653pt x 111.4825pt.
+
+<images/rawmotion.png, id=35, 2007.5pt x 2182.1525pt>
+File: images/rawmotion.png Graphic file (type png)
+
+<use images/rawmotion.png>
+Package pdftex.def Info: images/rawmotion.png used on input line 139.
+(pdftex.def)             Requested size: 245.26653pt x 266.57516pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2 <./images/nomotion.png> <./images/1xmotion.png>]
+[3 <./images/cr-eps-converted-to.pdf> <./images/rawmotion.png>]
+<images/detmotion.png, id=61, 2007.5pt x 1511.6475pt>
+File: images/detmotion.png Graphic file (type png)
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 113.
+<use images/detmotion.png>
+Package pdftex.def Info: images/detmotion.png used on input line 222.
+(pdftex.def)             Requested size: 245.26653pt x 184.66522pt.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 113.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
-
-(./skope.bbl [3 <./images/cr-eps-converted-to.pdf>]) [4] (./skope.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+(./skope.bbl [4 <./images/detmotion.png>]) [5] (./skope.aux) ) 
 Here is how much of TeX's memory you used:
- 5514 strings out of 492995
- 75279 string characters out of 6132704
- 163528 words of memory out of 5000000
- 8964 multiletter control sequences out of 15000+600000
- 14020 words of font info for 57 fonts, out of 8000000 for 9000
+ 5539 strings out of 492995
+ 75710 string characters out of 6132704
+ 161545 words of memory out of 5000000
+ 8988 multiletter control sequences out of 15000+600000
+ 13661 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,8n,29p,1364b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pf
-b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pf
-b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></
-usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
-r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
-cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
-ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
-17/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2017/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2017/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on skope.pdf (4 pages, 818394 bytes).
+ 42i,8n,29p,1364b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive
+/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/20
+17/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2017
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2017/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2017/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2017/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmti8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmtt10.pfb>
+Output written on skope.pdf (5 pages, 2508775 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
+ 131 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

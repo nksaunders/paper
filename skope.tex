@@ -65,10 +65,10 @@ and the PSF model is given by
 
 \[
 \tag{3}
-P(x,y) = \sum_m e^{-\frac{\left(x-x_{0,m} \right)^2}{2\sigma_{x,m}^2}-\frac{\left(y-y_{0,m} \right)^2}{2\sigma_{y,m}^2}} \\
+P(x,y) = \sum_m e^{-\frac{\left(x-x_{0,m} \right)^2}{2\sigma_{x,m}^2}-\frac{\left(y-y_{0,m} \right)^2}{2\sigma_{y,m}^2}}. \\
 \]
 
-Our model for the sensitivity variation was chosen to capture the same noise magnitude as real \textit{K2} targets. For consistency and comparison purposes, we adopt the Combined Differential Photometric Precision, developed by the \textit{Kepler} team \citep{2012PASP..124.1279C}, as our noise metric. In Fig. 1, we plot the CDPP of our simulated light curves and real \textit{K2} light curves as a function of $K_p\ Mag$.
+Our model for the sensitivity variation was chosen to capture the same noise magnitude as real \textit{K2} targets. For consistency and comparison purposes, we adopt the Combined Differential Photometric Precision, developed by the \textit{Kepler} team \citep{2012PASP..124.1279C}, as our noise metric. In Fig. 1, we plot the CDPP of our simulated light curves with no motion against CDPP of original \textit{Kepler} light curves as a function of $K_p\ Mag$. Our synthetic targets follow the trend of photon-limited noise. This is because our benchmark model has no stellar variability, which can add extraneous noise to de-trended light curves.
 
 \begin{figure}[h]
 	\centering
@@ -77,11 +77,13 @@ Our model for the sensitivity variation was chosen to capture the same noise mag
 	\label{fig:nomotion}
 \end{figure}
 
+In Fig. 2, we inject motion from a real \textit{K2} target (EPIC 205998445) to benchmark our model against \textit{K2} data. The noise of our various tests bracket the trend of raw \textit{K2} noise, again following the photon-limited trend due to no variability.
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1.0\linewidth]{1xmotion.png}
 	\caption{CDPP of our simulated light curves with \textit{K2} motion compared to real \textit{K2} targets as a function of $K_p\ Mag$.}
-	\label{fig:nomotion}
+	\label{fig:1motion}
 \end{figure}
 
 The coefficients $a_n$ were determined to emulate the magnitude of sensitivity variation on the \textit{Kepler} CCD based on its contribution to the noise in \textit{K2} light curves.
@@ -112,7 +114,32 @@ Applications of PLD have demonstrated that it is not well suited to handle targe
 
 \subsection{High Roll}
 
-\textit{\textbf{High roll cases.}}
+To test how PLD performs on targets with high motion relative to the detector, we inject motion vectors with various coefficients into our synthetic models. A coefficient of 1 corresponds to physical \textit{K2} motion (maximum of $\sim 0.56$ pixels), while a coefficient of 20 results in motion of up to $11.2$ pixels.
+
+\begin{table}[h!]
+\begin{center}
+    \begin{tabular}{c | c | c}
+        Motion Coefficient & Physical Motion (pixels) & $\sigma$ (pixels) \\
+        \hline \hline
+        1 & 0.56 & 0.16 \\
+        2 & 1.12 & 0.32 \\
+				5 & 2.8 & 0.8 \\
+				10 & 5.6 & 1.6 \\
+				20 & 11.2 & 3.2 \\
+   \end{tabular}
+	 \caption{Motion coefficients and corresponding pixel motion.}
+	 \label{table:1}
+\end{center}
+\end{table}
+
+The resulting raw light curve noise can be seen in Fig. 4 compared to raw \textit{K2} noise. Our synthetic targets with a motion coefficient of 1 align with the raw \textit{K2} trend and increase corresponding to noise coefficient.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\linewidth]{rawmotion.png}
+	\caption{CDPP of synthetic targets with 1x to 20x motion versus raw \textit{K2} noise as a function of $K_p\ Mag$.}
+	\label{fig:rawmotion}
+\end{figure}
 
 \section{Methods}
 
@@ -127,10 +154,10 @@ To de-trend our synthetic light curves, we used a variant of the PLD method appl
 The likelihood ($\mathcal{L}$) of our model capturing the true signal of the star is captured closely by a Gaussian distribution given by
 
 \[
-\mathcal{L} = \exp{\left[-\left( \frac{\textbf{y}-\textbf{X}\cdot\textbf{w}}{2\pmb{\Sigma}} \right)^2 \right]} \\
+\mathcal{L} = \exp{\left[-\left( \frac{\textbf{y}-\textbf{X}\cdot\textbf{w}}{2\pmb{\Sigma}} \right)^2 \right]}, \\
 \]
 
-where $\textbf{y}$ is the raw flux light curve, $\textbf{X}$ is the design matrix, $\pmb{\Sigma}$ is the covariance matrix between pixels, and $\textbf{w}$ is the array of weights. By solving for the derivative of the natural log of this likelihood, we locate the distribution peak and our best model parameters.
+where $\textbf{y}$ is the raw flux light curve, $\textbf{X}$ is the design matrix, $\pmb{\Sigma}$ is the covariance matrix between pixels, and $\textbf{w}$ is the array of weights. By solving for the derivative of the natural log of this likelihood, we locate the distribution peak and the best values for weights on the pixel flux vectors.
 
 \[
 \ln{\mathcal{L}} = - \frac{1}{2}\left(\textbf{y} - \textbf{X}\cdot\textbf{w} \right)^\top \cdot \pmb{\Sigma}^{-1} \cdot \left(\textbf{y} - \textbf{X}\cdot\textbf{w} \right) \\
@@ -150,10 +177,10 @@ Now, we identify the ideal weights for our noise model.
 \textbf{w} = \left( \textbf{X}^\top \cdot \pmb{\Sigma}^{-1} \cdot \textbf{X} \right)^{-1} \cdot \textbf{X}^\top \cdot \pmb{\Sigma}^{-1} \cdot \textbf{y} \\
 \]
 
-The final model can be solved by
+The final model can be found by solving
 
 \[
-\textbf{m} = \textbf{X} \cdot \left( \textbf{X}^\top \cdot \pmb{\Sigma}^{-1} \cdot \textbf{X} \right)^{-1} \cdot \textbf{X}^\top \cdot \pmb{\Sigma}^{-1} \cdot \textbf{y} \\
+\textbf{m} = \textbf{X} \cdot \left( \textbf{X}^\top \cdot \pmb{\Sigma}^{-1} \cdot \textbf{X} \right)^{-1} \cdot \textbf{X}^\top \cdot \pmb{\Sigma}^{-1} \cdot \textbf{y}. \\
 \]
 
 \subsection{PSF-fitting}
@@ -173,8 +200,7 @@ Where $\sigma$ is the flux error. Our model, defined in equation (2), was fit to
 
 The simplest solution to the issue of crowded apertures is to only consider pixels that contain the most flux from the desired target and exclude flux received by neighboring stars. The crowding metric in each pixel can be used to determine which pixels should be included to maximize target flux. (\textit{I need to give this a more thorough treatment to determine exactly what value of $C$ is best to include within an aperture. To do so, I will perform aperture tests on a variety of targets and maximize injected transit recovery accuracy to constrain ideal values of $C$.}) In a process we refer to as aperture PLD (aPLD), we define an aperture based on the crowding metric in each pixel to maximize target flux.
 
-Injection tests were performed by removing noise from simulated light curves with aPLD and measuring the transit
-depth of the de-trended light curve. Comparing this value to the injected depth, we determine the effectiveness of aPLD and constrain useful values of $C$. With our injection tests, we find that pixels with $C>0.3$ should be excluded to maximize the effectiveness of aPLD.
+Injection tests were performed by removing noise from simulated light curves with aPLD and measuring the transit depth of the de-trended light curve. Comparing this value to the injected depth, we determine the effectiveness of aPLD and constrain useful values of $C$. With our injection tests, we find that pixels with $C>0.3$ should be excluded to maximize the effectiveness of aPLD.
 
 \subsection{Motion Removal}
 
@@ -187,7 +213,28 @@ y_0 = Y(c) - v_y(c) \\
 
 \section{Results}
 
+\subsection{Motion Tests}
+
+When de-trended with second order PLD, our synthetic light curves align with the noise of original \textit{Kepler} observations for motion coefficients of 1x, 2x, and 5x. 10x motion shows increased noise in the de-trended light curve, but still performs better than observations from the ground.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\linewidth]{detmotion.png}
+	\caption{De-trended CDPP for synthetic targets with 1x to 20x motion versus original \textit{Kepler} noise as a function of $K_p\ Mag$.}
+	\label{fig:detmotion}
+\end{figure}
+
 \subsection{Injection Tests}
+
+\section{Further Considerations}
+
+\subsection{Focus Changes}
+
+\textbf{TESS stuff, breathing apertures}
+
+\subsection{Seeing}
+
+\textbf{APO data}
 
 \section{Conclusion}
 
