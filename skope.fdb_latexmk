@@ -1,5 +1,5 @@
 # Fdb version 3
-["bibtex skope"] 1511830507 "skope.aux" "skope.bbl" "skope" 1511919246
+["bibtex skope"] 1511830507 "skope.aux" "skope.bbl" "skope" 1512765463
   "./aasjournal.bst" 1510766083 34618 459689a02a97161f219d1474d195febc ""
   "references.bib" 1510766083 10167 082b22232a9dcb392a2e12ab48d188e9 ""
   "skope.aux" 1511919246 4974 313581b1b323dfbceedaf73cec455d75 ""
@@ -7,7 +7,7 @@
   (generated)
   "skope.bbl"
   "skope.blg"
-["pdflatex"] 1511919243 "skope.tex" "skope.pdf" "skope" 1511919246
+["pdflatex"] 1511919243 "skope.tex" "skope.pdf" "skope" 1512765463
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -121,5 +121,5 @@
   (generated)
   "skope.pdf"
   "skope.aux"
-  "skopeNotes.bib"
   "skope.log"
+  "skopeNotes.bib"
