@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex skope"] 1511830507 "skope.aux" "skope.bbl" "skope" 1512765463
+["bibtex skope"] 1511830507 "skope.aux" "skope.bbl" "skope" 1514083372
   "./aasjournal.bst" 1510766083 34618 459689a02a97161f219d1474d195febc ""
   "references.bib" 1510766083 10167 082b22232a9dcb392a2e12ab48d188e9 ""
-  "skope.aux" 1511919246 4974 313581b1b323dfbceedaf73cec455d75 ""
-  "skopeNotes.bib" 1511919244 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "skope.aux" 1514083372 4974 313581b1b323dfbceedaf73cec455d75 ""
+  "skopeNotes.bib" 1514083370 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
   "skope.bbl"
   "skope.blg"
-["pdflatex"] 1511919243 "skope.tex" "skope.pdf" "skope" 1512765463
+["pdflatex"] 1514083369 "skope.tex" "skope.pdf" "skope" 1514083372
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -115,11 +115,11 @@
   "images/detmotion.png" 1507810553 767720 5eae145cc3345d1664bd2bd2f93ed3b0 ""
   "images/nomotion.png" 1510865488 210441 79f9e4a0730d81383d2f4892fc38eccf ""
   "images/rawmotion.png" 1507785307 1264059 b8c5cde239c0af3b4ccfafe546e2836d ""
-  "skope.aux" 1511919246 4974 313581b1b323dfbceedaf73cec455d75 ""
+  "skope.aux" 1514083372 4974 313581b1b323dfbceedaf73cec455d75 ""
   "skope.bbl" 1511830507 2837 d27c24f6f48ab5d280f9fd606aa7a9d3 "bibtex skope"
-  "skope.tex" 1511919240 18107 e95fd7ddced841eb2b4798a1456ee68d ""
+  "skope.tex" 1514083369 18106 995e32d77177d88713b143a5f78a6768 ""
   (generated)
-  "skope.pdf"
+  "skopeNotes.bib"
   "skope.aux"
   "skope.log"
-  "skopeNotes.bib"
+  "skope.pdf"
