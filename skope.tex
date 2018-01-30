@@ -1,4 +1,4 @@
-\documentclass[12pt,preprint]{emulateapj}
+\documentclass[12pt,preprint]{aastex}
 \usepackage{mathtools}
 \usepackage{epstopdf}
 \usepackage{amsmath}
@@ -65,7 +65,8 @@ and the PSF model is given by
 
 \[
 \tag{3}
-P(x,y) = \sum_m e^{-\frac{\left(x-x_{0,m} \right)^2}{2\sigma_{x,m}^2}-\frac{\left(y-y_{0,m} \right)^2}{2\sigma_{y,m}^2}}. \\
+P(x,y)=\sum_m \frac{1}{2\pi\sigma_{x,m}\sigma_{x,n}\sqrt{1-\rho_m^2}}
+\text{exp}\left[ -\frac{1}{2(1-\rho_m^2)} \left( \frac{(x-x_{0,m})^2}{2\sigma_{x,m}^2} + \frac{(y-y_{0,m})^2}{2\sigma_{y,m}^2} - \frac{2\rho_m (x-x_{0,m})(y-y_{0,m})}{\sigma_{x,m}\sigma_{y,m}} \right) \right]. //
 \]
 
 Our model for the sensitivity variation was chosen to capture the same noise magnitude as real \textit{K2} targets. For consistency and comparison purposes, we adopt the Combined Differential Photometric Precision, developed by the \textit{Kepler} team \citep{2012PASP..124.1279C}, as our noise metric. In Fig. 1, we plot the CDPP of our simulated light curves with no motion against CDPP of original \textit{Kepler} light curves as a function of $K_p\ Mag$. Our synthetic targets follow the trend of photon-limited noise. This is because our benchmark model has no stellar variability, which can add extraneous noise to de-trended light curves.
