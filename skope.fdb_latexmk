@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex skope"] 1517946647 "skope.aux" "skope.bbl" "skope" 1517946693
+["bibtex skope"] 1517946647 "skope.aux" "skope.bbl" "skope" 1517947170
   "./aasjournal.bst" 1510766083 34618 459689a02a97161f219d1474d195febc ""
   "references.bib" 1510766083 10167 082b22232a9dcb392a2e12ab48d188e9 ""
-  "skope.aux" 1517946693 4767 3526ed5a6f59e2c16dd54c52c754435a ""
+  "skope.aux" 1517947170 4767 3526ed5a6f59e2c16dd54c52c754435a ""
   (generated)
   "skope.bbl"
   "skope.blg"
-["pdflatex"] 1517946691 "skope.tex" "skope.pdf" "skope" 1517946693
+["pdflatex"] 1517947168 "skope.tex" "skope.pdf" "skope" 1517947170
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -97,11 +97,11 @@
   "images/detmotion.png" 1507810553 767720 5eae145cc3345d1664bd2bd2f93ed3b0 ""
   "images/nomotion.png" 1510865488 210441 79f9e4a0730d81383d2f4892fc38eccf ""
   "images/rawmotion.png" 1507785307 1264059 b8c5cde239c0af3b4ccfafe546e2836d ""
-  "skope.aux" 1517946693 4767 3526ed5a6f59e2c16dd54c52c754435a ""
+  "skope.aux" 1517947170 4767 3526ed5a6f59e2c16dd54c52c754435a ""
   "skope.bbl" 1517946647 2837 d27c24f6f48ab5d280f9fd606aa7a9d3 "bibtex skope"
-  "skope.tex" 1517946690 18551 cf4a50926caef65a1a0612ca08df1002 ""
+  "skope.tex" 1517947168 18626 dcdd01640823dfd4b5f892a03f9402a1 ""
   (generated)
-  "skope.pdf"
-  "skope.log"
   "skopeNotes.bib"
   "skope.aux"
+  "skope.pdf"
+  "skope.log"
