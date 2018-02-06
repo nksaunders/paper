@@ -21,7 +21,7 @@
 
 \begin{abstract}
 
-	As \textit{K2} enters its final campaigns of observation, the fuel powering its stabilizing thrusters is expected to begin to run out, causing thruster fires to sputter. Sputtering will cause higher magnitude and less predictable motion of stellar Point Spread Functions (PSFs) relative to the spacecraft detector, generating more noise in K2 light curves. We present \texttt{skope}, a \texttt{python} package to create a forward model of the \textit{Kepler} Space Telescope detector and simulate stellar targets traversing the CCD. Using simulations, we characterize the contribution of CCD sensitivity variation to the noise of \textit{K2} light curves. We also test methods to increase the effectiveness of existing de-trending pipelines for space telescope exoplanet targets, and focus our treatment on stars with bright neighbors or high motion relative to the CCD. With these simulated light curves, we assess the de-trending power of two methods, first: fitting an aperture around the stellar PSF to maximize light received by the target and exclude contribution from neighbors, and second: fitting a mathematical PSF model to each target in the aperture and subtracting contribution by neighbors. The combination of these two methods increases the recovery accuracy of injection tests by (\textit{some amount}). These methods can be applied to the light curves of \textit{K2} targets for existing and future campaigns, and will become particularly useful as \textit{Kepler} begins to run out of fuel. These methods can also be applied to future space telescope missions, such as \textit{TESS}, to improve detection and characterization of exoplanet candidates.
+	As \textit{K2} enters its final campaigns of observation, the fuel powering the space telescope's stabilizing thrusters is expected to begin to run out, causing thruster fires to sputter. Sputtering will cause higher magnitude and less predictable motion of stellar Point Spread Functions (PSFs) relative to the spacecraft detector, generating more noise in K2 light curves. We present \texttt{skope}, a \texttt{python} package to create a forward model of the \textit{Kepler} Space Telescope detector and simulate stellar targets traversing the CCD. Using simulations, we characterize the contribution of CCD sensitivity variation to the noise of \textit{K2} light curves. We also test methods to increase the effectiveness of existing de-trending pipelines for space telescope exoplanet targets, and focus our treatment on stars with bright neighbors or high motion relative to the CCD. With these simulated light curves, we assess the de-trending power of two methods, first: fitting an aperture around the stellar PSF to maximize light received by the target and exclude contribution from neighbors, and second: fitting a mathematical PSF model to each target in the aperture and subtracting contribution by neighbors. The combination of these two methods increases the recovery accuracy of injection tests by (\textit{some amount}). These methods can be applied to the light curves of \textit{K2} targets for existing and future campaigns, and will become particularly useful as \textit{Kepler} begins to run out of fuel. These methods can also be applied to future space telescope missions, such as \textit{TESS}, to improve detection and characterization of exoplanet candidates.
 
 \end{abstract}
 
@@ -67,8 +67,10 @@ and the PSF model is given by
 
 \[
 \tag{3}
-P(x,y)=\sum_m \frac{1}{2\pi\sigma_{x,m}\sigma_{x,n}\sqrt{1-\rho_m^2}}
-\text{exp}\left[ -\frac{1}{2(1-\rho_m^2)} \left( \frac{(x-x_{0,m})^2}{2\sigma_{x,m}^2} + \frac{(y-y_{0,m})^2}{2\sigma_{y,m}^2} - \frac{2\rho_m (x-x_{0,m})(y-y_{0,m})}{\sigma_{x,m}\sigma_{y,m}} \right) \right]. //
+\begin{split}
+P(x,y) & = \sum_m \frac{1}{2\pi\sigma_{x,m}\sigma_{x,n}\sqrt{1-\rho_m^2}} \text{exp}\left[ -\frac{1}{2(1-\rho_m^2)} \left( \frac{(x-x_{0,m})^2}{2\sigma_{x,m}^2} \right. \right. \\
+			 & \left. \left. + \frac{(y-y_{0,m})^2}{2\sigma_{y,m}^2} - \frac{2\rho_m  (x-x_{0,m})(y-y_{0,m})}{\sigma_{x,m}\sigma_{y,m}} \right) \right].
+\end{split}
 \]
 
 Our model for the sensitivity variation was chosen to capture the same noise magnitude as real \textit{K2} targets. For our noise metric, we use the Combined Differential Photometric Precision, developed by the \textit{Kepler} team \citep{2012PASP..124.1279C}. In Fig. 1, we plot the CDPP of our simulated light curves with no motion against CDPP of original \textit{Kepler} light curves as a function of $K_p\ Mag$. Our synthetic targets follow the trend of photon-limited noise. This is because our benchmark model has no stellar variability, which can add extraneous noise to de-trended light curves.
@@ -122,13 +124,13 @@ To test how PLD performs on targets with high motion relative to the detector, w
 \begin{table}[h!]
 \begin{center}
     \begin{tabular}{c | c | c}
-        Motion Coefficient & Physical Motion (pixels) & $\sigma$ (pixels) \\
+        Motion Coefficient & Physical Motion (pixels) & Max Motion (pixels) \\
         \hline \hline
-        1 & 0.56 & 0.16 \\
-        2 & 1.12 & 0.32 \\
-				5 & 2.8 & 0.8 \\
-				10 & 5.6 & 1.6 \\
-				20 & 11.2 & 3.2 \\
+        1 & $0.37\pm0.16$ & 0.56 \\
+        2 & $0.38\pm0.32$ & 1.12 \\
+				5 & $1.04\pm0.75$ & 2.8 \\
+				10 & $2.04\pm1.75$ & 6.6 \\
+				20 & $3.16\pm1.75$ & 11.2 \\
    \end{tabular}
 	 \caption{Motion coefficients and corresponding pixel motion.}
 	 \label{table:1}
