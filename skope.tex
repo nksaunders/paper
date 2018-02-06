@@ -89,7 +89,7 @@ In Fig. 2, we inject motion from a real \textit{K2} target (EPIC 205998445) to b
 	\label{fig:1motion}
 \end{figure}
 
-The coefficients $a_n$ were determined to emulate the magnitude of sensitivity variation on the \textit{Kepler} CCD based on its contribution to the noise in \textit{K2} light curves. Sensitivity coefficients are independent in $x$ and $y$ for consistancy with \cite{toyozumi_ashley_2005}.
+The coefficients $a_n$ were determined to emulate the magnitude of sensitivity variation on the \textit{Kepler} CCD based on its contribution to the noise in \textit{K2} light curves. Sensitivity coefficients are independent in $x$ and $y$ for consistancy with \cite{toyozumi_ashley_2005}.;
 
 To best capture the characteristics of \textit{K2} data when analyzing the noise contributed by quantum sensitivity variation, our model also included two sources of noise -- photon and background noise. (\textit{More here about the sources of noise.})
 
@@ -150,9 +150,7 @@ The two sources of noise presented above -- pixel crowding and detector sensitiv
 
 \subsection{PLD}
 
-\textbf{more detail here}
-
-To de-trend our synthetic light curves, we used a variant of the PLD method applied in the \texttt{EVEREST} pipeline. We included a Gaussian Process (GP) to capture and retain the astrophysical signal of the synthetic host star.
+To de-trend our synthetic light curves, we used a variant of the PLD method applied in the \texttt{EVEREST} pipeline. For a more detailed treatment of PLD, see the first two \texttt{EVEREST} papers \citep{2016AJ....152..100L,2017arXiv170205488L}. Our model included a Gaussian Process (GP) to capture and retain the astrophysical signal of the synthetic host star.
 
 The likelihood ($\mathcal{L}$) of our model capturing the true signal of the star is captured closely by a Gaussian distribution given by
 
