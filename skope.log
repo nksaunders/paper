@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  6 FEB 2018 14:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 FEB 2018 11:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -335,7 +335,7 @@ Package pdftex.def Info: images/1xmotion.png used on input line 89.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4] [5 <./images/nomotion.png>]
+[4]
 Package epstopdf Info: Source file: <images/cr.eps>
 (epstopdf)                    date: 2017-11-15 09:15:03
 (epstopdf)                    size: 3810428 bytes
@@ -346,8 +346,7 @@ Package epstopdf Info: Source file: <images/cr.eps>
 .pdf images/cr.eps>
 (epstopdf)             \includegraphics on input line 115.
 Package epstopdf Info: Output file is already uptodate.
-
-<images/cr-eps-converted-to.pdf, id=33, 794.97pt x 361.35pt>
+ <images/cr-eps-converted-to.pdf, id=29, 794.97pt x 361.35pt>
 File: images/cr-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/cr-eps-converted-to.pdf>
@@ -358,8 +357,11 @@ Package pdftex.def Info: images/cr-eps-converted-to.pdf used on input line 115.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 <./images/1xmotion.png>]
-<images/rawmotion.png, id=38, 2007.5pt x 2182.1525pt>
+[5 <./images/nomotion.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/rawmotion.png, id=34, 2007.5pt x 2182.1525pt>
 File: images/rawmotion.png Graphic file (type png)
 
 <use images/rawmotion.png>
@@ -369,7 +371,7 @@ Package pdftex.def Info: images/rawmotion.png used on input line 144.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 <./images/cr-eps-converted-to.pdf>] [8] [9]
+[6 <./images/1xmotion.png>] [7 <./images/cr-eps-converted-to.pdf>] [8] [9]
 <images/detmotion.png, id=71, 2007.5pt x 1511.6475pt>
 File: images/detmotion.png Graphic file (type png)
 
@@ -391,11 +393,11 @@ Missing character: There is no “ in font cmr12!
 Here is how much of TeX's memory you used:
  3963 strings out of 492995
  53921 string characters out of 6132704
- 123177 words of memory out of 5000000
+ 122177 words of memory out of 5000000
  7441 multiletter control sequences out of 15000+600000
  12669 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,18n,28p,1715b,273s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,18n,28p,1579b,273s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
@@ -408,7 +410,7 @@ b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
 usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on skope.pdf (13 pages, 2422787 bytes).
+Output written on skope.pdf (13 pages, 2423259 bytes).
 PDF statistics:
  126 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream

@@ -9,9 +9,9 @@
 \DeclareGraphicsExtensions{.png,.pdf}
 \begin{document}
 
-% \title{Pushing the Limits of De-trending with PLD}
+\title{Pushing the Limits of De-trending with PLD}
 
-\title{Finding Exoplanets with Sputtering Spacecrafts and Erratic PSFs}
+% \title{Searching for Exoplanets with Sputtering Space Telescopes}
 
 \author{Nicholas Saunders \altaffilmark{1,2,3}, Rodrigo Luger \altaffilmark{1,2}}
 
@@ -21,7 +21,7 @@
 
 \begin{abstract}
 
-	As \textit{K2} enters its final campaigns of observation, the fuel powering the space telescope's stabilizing thrusters is expected to begin to run out, causing thruster fires to sputter. Sputtering will cause higher magnitude and less predictable motion of stellar Point Spread Functions (PSFs) relative to the spacecraft detector, generating more noise in K2 light curves. We present \texttt{skope}, a \texttt{python} package to create a forward model of the \textit{Kepler} Space Telescope detector and simulate stellar targets traversing the CCD. Using simulations, we characterize the contribution of CCD sensitivity variation to the noise of \textit{K2} light curves. We also test methods to increase the effectiveness of existing de-trending pipelines for space telescope exoplanet targets, and focus our treatment on stars with bright neighbors or high motion relative to the CCD. With these simulated light curves, we assess the de-trending power of two methods, first: fitting an aperture around the stellar PSF to maximize light received by the target and exclude contribution from neighbors, and second: fitting a mathematical PSF model to each target in the aperture and subtracting contribution by neighbors. The combination of these two methods increases the recovery accuracy of injection tests by (\textit{some amount}). These methods can be applied to the light curves of \textit{K2} targets for existing and future campaigns, and will become particularly useful as \textit{Kepler} begins to run out of fuel. These methods can also be applied to future space telescope missions, such as \textit{TESS}, to improve detection and characterization of exoplanet candidates.
+	As the \textit{Kepler} Space Telescope's follow-up \textit{K2} mission enters its final campaigns of observation, the fuel powering the spacecraft's stabilizing thrusters is expected to begin to run out, causing thruster fires to sputter. Sputtering will cause higher magnitude and less predictable motion of stellar Point Spread Functions (PSFs) relative to the spacecraft detector, generating more noise in transiting exoplanet light curves. To understand this increased noise, we present \texttt{skope}, a \texttt{python} package to create a forward model of the \textit{Kepler} Space Telescope detector and simulate stellar targets traversing the CCD. Using these simulations, we characterize the contribution of detector sensitivity variation to the noise of \textit{K2} light curves and test various models for thruster sputtering in preparation for identifying high motion in future \textit{K2} data. We also test methods to increase the effectiveness of existing noise-removal techniques for space telescope exoplanet targets, focusing our treatment on stars with bright neighbors or high motion relative to the detector. Using techniques tested on simulations, we study a population of exoplanet targets that has received less attention due to difficulties arising from contribution by bright nearby stars. My noise-removal methods can be applied to current and future \textit{K2} data, as well as data from future missions such as the Transiting Exoplanet Survey Satellite (\textit{TESS}) and the James Webb Space Telescope (\textit{JWST}). 
 
 \end{abstract}
 
