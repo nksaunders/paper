@@ -21,7 +21,7 @@
 
 \begin{abstract}
 
-	As the \textit{Kepler} Space Telescope's follow-up \textit{K2} mission enters its final campaigns of observation, the fuel powering the spacecraft's stabilizing thrusters is expected to begin to run out, causing thruster fires to sputter. Sputtering will cause higher magnitude and less predictable motion of stellar Point Spread Functions (PSFs) relative to the spacecraft detector, generating more noise in transiting exoplanet light curves. To understand this increased noise, we present \texttt{skope}, a \texttt{python} package to create a forward model of the \textit{Kepler} Space Telescope detector and simulate stellar targets traversing the CCD. Using these simulations, we characterize the contribution of detector sensitivity variation to the noise of \textit{K2} light curves and test various models for thruster sputtering in preparation for identifying high motion in future \textit{K2} data. We also test methods to increase the effectiveness of existing noise-removal techniques for space telescope exoplanet targets, focusing our treatment on stars with bright neighbors or high motion relative to the detector. Using techniques tested on simulations, we study a population of exoplanet targets that has received less attention due to difficulties arising from contribution by bright nearby stars. My noise-removal methods can be applied to current and future \textit{K2} data, as well as data from future missions such as the Transiting Exoplanet Survey Satellite (\textit{TESS}) and the James Webb Space Telescope (\textit{JWST}). 
+	As the \textit{Kepler} Space Telescope's follow-up \textit{K2} mission enters its final campaigns of observation, the fuel powering the spacecraft's stabilizing thrusters is expected to begin to run out, causing thruster fires to sputter. Sputtering will cause higher magnitude and less predictable motion of stellar Point Spread Functions (PSFs) relative to the spacecraft detector, generating more noise in transiting exoplanet light curves. To understand this increased noise, we present \texttt{skope}, a \texttt{python} package to create a forward model of the \textit{Kepler} Space Telescope detector and simulate stellar targets traversing the CCD. Using these simulations, we characterize the contribution of detector sensitivity variation to the noise of \textit{K2} light curves and test various models for thruster sputtering in preparation for identifying high motion in future \textit{K2} data. We also test methods to increase the effectiveness of existing noise-removal techniques for space telescope exoplanet targets, focusing our treatment on stars with bright neighbors or high motion relative to the detector. Using techniques tested on simulations, we study a population of exoplanet targets that has received less attention due to difficulties arising from contribution by bright nearby stars. My noise-removal methods can be applied to current and future \textit{K2} data, as well as data from future missions such as the Transiting Exoplanet Survey Satellite (\textit{TESS}) and the James Webb Space Telescope (\textit{JWST}).
 
 \end{abstract}
 
@@ -45,7 +45,18 @@ In this paper, we present options for assessing and removing these sources of no
 
 Removal of instrumental noise requires a thorough understanding of its source. Stellar motion relative to the pixel sensitivity variation on the \textit{Kepler} CCD causes fluctuation in the amount of light received by the telescope detector. In order to accurately fit a PSF model to multiple targets on the detector, it became necessary to generate a model for the pixel sensitivity variation of the CCD.
 
-We did not set out to model the exact sensitivity of the \textit{Kepler} CCD, rather our goal was to simply characterize its contribution to the noise in \textit{K2} light curves. Light curves generated against this model are adequate to serve as well-understood sample targets on which to test de-trending methods To accurately represent the \textit{Kepler} CCD, we generated a model for the detector that included both inter-pixel sensitivity variation between pixels and intra-pixel sensitivity variation within each pixel. We found that a stochastic distribution of sensitivity with ${\sim}1\%$ variation between pixels and ${\sim}5\%$ variation within pixels, from center to edge.\footnote{More tests are needed to determine these values with higher certainty, these are just the values we ended up using in our model. Rodrigo - any ideas?}
+We did not set out to model the exact sensitivity of the \textit{Kepler} CCD, rather our goal was to simply characterize its contribution to the noise in \textit{K2} light curves. Light curves generated against this model are adequate to serve as well-understood sample targets on which to test de-trending methods. To accurately represent the \textit{Kepler} CCD, we generated a model for the detector that included both inter-pixel sensitivity variation between pixels and intra-pixel sensitivity variation within each pixel. We found that a stochastic distribution of sensitivity with ${\sim}1\%$ variation between pixels and ${\sim}5\%$ variation within pixels, from center to edge.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.5\linewidth]{detector.png}
+	\caption{A sample simulated CCD.}
+	\label{fig:detector}
+\end{figure}
+
+A sample detector with included sensitivity variation can be seen in figure \ref{fig:detector}.
+
+Currently, stellar PSFs already traverse various regions of sensitivity variation on the CCD due to pointing instability. As spacecraft motion increases, PSFs will move more dramatically across many pixels, which will contribute significant noise to sputtering-\textit{K2} light curves.
 
 \subsection{PSF Model}
 
@@ -73,20 +84,20 @@ P(x,y) & = \sum_m \frac{1}{2\pi\sigma_{x,m}\sigma_{x,n}\sqrt{1-\rho_m^2}} \text{
 \end{split}
 \]
 
-Our model for the sensitivity variation was chosen to capture the same noise magnitude as real \textit{K2} targets. For our noise metric, we use the Combined Differential Photometric Precision, developed by the \textit{Kepler} team \citep{2012PASP..124.1279C}. In Fig. 1, we plot the CDPP of our simulated light curves with no motion against CDPP of original \textit{Kepler} light curves as a function of $K_p\ Mag$. Our synthetic targets follow the trend of photon-limited noise. This is because our benchmark model has no stellar variability, which can add extraneous noise to de-trended light curves.
+Our model for the sensitivity variation was chosen to capture the same noise magnitude as real \textit{K2} targets. For our noise metric, we use the Combined Differential Photometric Precision, developed by the \textit{Kepler} team \citep{2012PASP..124.1279C}. In figure \ref{fig:nomotion}, we plot the CDPP of our simulated light curves with no motion against CDPP of original \textit{Kepler} light curves as a function of $K_p\ Mag$. Our synthetic targets follow the trend of photon-limited noise. This is because our benchmark model has no stellar variability, which can add extraneous noise to de-trended light curves.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=1.0\linewidth]{nomotion.png}
+	\includegraphics[width=.5\linewidth]{nomotion.png}
 	\caption{CDPP of our simulated light curves with no motion compared to original \textit{Kepler} targets as a function of $K_p\ Mag$.}
 	\label{fig:nomotion}
 \end{figure}
 
-In Fig. 2, we inject motion from a real \textit{K2} target (EPIC 205998445) to benchmark our model against \textit{K2} data. The noise of our various tests bracket the trend of raw \textit{K2} noise, again following the photon-limited trend due to no variability.
+In figure \ref{fig:1motion}, we inject motion from a real \textit{K2} target (EPIC 205998445) to benchmark our model against \textit{K2} data. The noise of our various tests bracket the trend of raw \textit{K2} noise, again following the photon-limited trend due to no variability.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=1.0\linewidth]{1xmotion.png}
+	\includegraphics[width=.5\linewidth]{1xmotion.png}
 	\caption{CDPP of our simulated light curves with \textit{K2} motion compared to real \textit{K2} targets as a function of $K_p\ Mag$.}
 	\label{fig:1motion}
 \end{figure}

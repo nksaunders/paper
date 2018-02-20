@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 FEB 2018 11:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 FEB 2018 13:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -316,26 +316,30 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 40.
- [2] [3]
-<images/nomotion.png, id=23, 469.755pt x 354.6048pt>
+ [2]
+<images/detector.png, id=19, 254.9525pt x 245.91875pt>
+File: images/detector.png Graphic file (type png)
+
+<use images/detector.png>
+Package pdftex.def Info: images/detector.png used on input line 52.
+(pdftex.def)             Requested size: 234.87749pt x 226.56694pt.
+ [3 <./images/detector.png>]
+<images/nomotion.png, id=25, 469.755pt x 354.6048pt>
 File: images/nomotion.png Graphic file (type png)
  <use images/nomotion.png>
-Package pdftex.def Info: images/nomotion.png used on input line 80.
-(pdftex.def)             Requested size: 469.75499pt x 354.60391pt.
+Package pdftex.def Info: images/nomotion.png used on input line 91.
+(pdftex.def)             Requested size: 234.87749pt x 177.30196pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/1xmotion.png, id=25, 469.755pt x 348.3414pt>
+[4] <images/1xmotion.png, id=30, 469.755pt x 348.3414pt>
 File: images/1xmotion.png Graphic file (type png)
- <use images/1xmotion.png>
-Package pdftex.def Info: images/1xmotion.png used on input line 89.
-(pdftex.def)             Requested size: 469.75499pt x 348.34055pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4]
+<use images/1xmotion.png>
+Package pdftex.def Info: images/1xmotion.png used on input line 100.
+(pdftex.def)             Requested size: 234.87749pt x 174.17027pt.
+ [5 <./images/nomotion.png> <./images/1xmotion.png>]
 Package epstopdf Info: Source file: <images/cr.eps>
 (epstopdf)                    date: 2017-11-15 09:15:03
 (epstopdf)                    size: 3810428 bytes
@@ -344,39 +348,39 @@ Package epstopdf Info: Source file: <images/cr.eps>
 (epstopdf)                    size: 18005 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/cr-eps-converted-to
 .pdf images/cr.eps>
-(epstopdf)             \includegraphics on input line 115.
+(epstopdf)             \includegraphics on input line 126.
 Package epstopdf Info: Output file is already uptodate.
- <images/cr-eps-converted-to.pdf, id=29, 794.97pt x 361.35pt>
+
+<images/cr-eps-converted-to.pdf, id=36, 794.97pt x 361.35pt>
 File: images/cr-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/cr-eps-converted-to.pdf>
-Package pdftex.def Info: images/cr-eps-converted-to.pdf used on input line 115.
+Package pdftex.def Info: images/cr-eps-converted-to.pdf used on input line 126.
 
 (pdftex.def)             Requested size: 469.75499pt x 213.53099pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5 <./images/nomotion.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/rawmotion.png, id=34, 2007.5pt x 2182.1525pt>
+<images/rawmotion.png, id=37, 2007.5pt x 2182.1525pt>
 File: images/rawmotion.png Graphic file (type png)
 
 <use images/rawmotion.png>
-Package pdftex.def Info: images/rawmotion.png used on input line 144.
+Package pdftex.def Info: images/rawmotion.png used on input line 155.
 (pdftex.def)             Requested size: 469.75499pt x 510.60832pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 <./images/1xmotion.png>] [7 <./images/cr-eps-converted-to.pdf>] [8] [9]
-<images/detmotion.png, id=71, 2007.5pt x 1511.6475pt>
+[6] [7 <./images/cr-eps-converted-to.pdf>] [8] [9]
+<images/detmotion.png, id=73, 2007.5pt x 1511.6475pt>
 File: images/detmotion.png Graphic file (type png)
 
 <use images/detmotion.png>
-Package pdftex.def Info: images/detmotion.png used on input line 216.
+Package pdftex.def Info: images/detmotion.png used on input line 227.
 (pdftex.def)             Requested size: 469.75499pt x 353.71487pt.
 
 
@@ -391,10 +395,10 @@ Missing character: There is no “ in font cmr12!
 
 ] (./skope.aux) ) 
 Here is how much of TeX's memory you used:
- 3963 strings out of 492995
- 53921 string characters out of 6132704
- 122177 words of memory out of 5000000
- 7441 multiletter control sequences out of 15000+600000
+ 3969 strings out of 492995
+ 54042 string characters out of 6132704
+ 123185 words of memory out of 5000000
+ 7446 multiletter control sequences out of 15000+600000
  12669 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,18n,28p,1579b,273s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -410,10 +414,10 @@ b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
 usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on skope.pdf (13 pages, 2423259 bytes).
+Output written on skope.pdf (13 pages, 2459083 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
+ 128 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

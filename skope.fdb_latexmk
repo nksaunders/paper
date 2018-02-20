@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex skope"] 1519155732 "skope.aux" "skope.bbl" "skope" 1519155734
+["bibtex skope"] 1519162594 "skope.aux" "skope.bbl" "skope" 1519162596
   "./aasjournal.bst" 1510766083 34618 459689a02a97161f219d1474d195febc ""
   "references.bib" 1517948342 10529 3f3378d07ef42b5e18323d066639eb6c ""
-  "skope.aux" 1519155734 4919 5d89b559f7c6c6c57a50cfc215096bf1 ""
+  "skope.aux" 1519162596 5051 9fb989a1ae77588921b1a6c62a614e88 ""
   (generated)
   "skope.blg"
   "skope.bbl"
-["pdflatex"] 1519155732 "skope.tex" "skope.pdf" "skope" 1519155734
+["pdflatex"] 1519162594 "skope.tex" "skope.pdf" "skope" 1519162596
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -94,14 +94,15 @@
   "aastex.cls" 1510766083 68027 460547adc15eeffea798cde479e88aee ""
   "images/1xmotion.png" 1510865507 390594 9983fb5e3117e6c59aba0d72ddfdb971 ""
   "images/cr.eps" 1510766103 3810428 d3d17093fb1a7ccebbf1eaa25e9ce9bc ""
+  "images/detector.png" 1519157700 29358 770362aa08e0569977e87c1757e7ba64 ""
   "images/detmotion.png" 1507810553 767720 5eae145cc3345d1664bd2bd2f93ed3b0 ""
   "images/nomotion.png" 1510865488 210441 79f9e4a0730d81383d2f4892fc38eccf ""
   "images/rawmotion.png" 1507785307 1264059 b8c5cde239c0af3b4ccfafe546e2836d ""
-  "skope.aux" 1519155734 4919 5d89b559f7c6c6c57a50cfc215096bf1 ""
-  "skope.bbl" 1519155732 3008 19a5a82b2bb1d2f3632c1de16e8ed0ec "bibtex skope"
-  "skope.tex" 1519155729 18836 143f8673765c5ffb820d40fbe48dd581 ""
+  "skope.aux" 1519162596 5051 9fb989a1ae77588921b1a6c62a614e88 ""
+  "skope.bbl" 1519162594 3008 19a5a82b2bb1d2f3632c1de16e8ed0ec "bibtex skope"
+  "skope.tex" 1519162591 19249 44518b89305e9751b601cbef8035798e ""
   (generated)
+  "skope.pdf"
   "skope.aux"
   "skope.log"
-  "skope.pdf"
   "skopeNotes.bib"
