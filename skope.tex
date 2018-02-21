@@ -1,8 +1,12 @@
 \documentclass[12pt,preprint]{aastex}
+\let\captionbox\relax
 \usepackage{mathtools}
 \usepackage{epstopdf}
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{caption,subcaption}
+\captionsetup[figure]{labelsep=space,singlelinecheck=false}
+\captionsetup[subfigure]{justification=centering}
 
 \epstopdfDeclareGraphicsRule{.pdf}{png}{.png}{convert #1 \OutputFile}
 \graphicspath{ {images/} }
@@ -47,11 +51,29 @@ Removal of instrumental noise requires a thorough understanding of its source. S
 
 We did not set out to model the exact sensitivity of the \textit{Kepler} CCD, rather our goal was to simply characterize its contribution to the noise in \textit{K2} light curves. Light curves generated against this model are adequate to serve as well-understood sample targets on which to test de-trending methods. To accurately represent the \textit{Kepler} CCD, we generated a model for the detector that included both inter-pixel sensitivity variation between pixels and intra-pixel sensitivity variation within each pixel. We found that a stochastic distribution of sensitivity with ${\sim}1\%$ variation between pixels and ${\sim}5\%$ variation within pixels, from center to edge.
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=.5\linewidth]{detector.png}
-	\caption{A sample simulated CCD.}
-	\label{fig:detector}
+\begin{figure}
+  \centering
+  \begin{subfigure}[b]{0.25\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{detector.png}
+    \label{fig:fig1}
+		\caption{Sample detector.}
+  \end{subfigure}%
+  \quad
+  \begin{subfigure}[b]{0.25\textwidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{uninterpolated.png}
+    \label{fig:fig2}
+		\caption{Stellar PSF.}
+  \end{subfigure}%
+	\quad
+	\begin{subfigure}[b]{0.25\textwidth}
+		\centering
+		\includegraphics[width=.85\linewidth]{interpolated.png}
+		\label{fig:fig2}
+		\caption{Interpolated.}
+	\end{subfigure}
+  \label{fig:detector}
 \end{figure}
 
 A sample detector with included sensitivity variation can be seen in figure \ref{fig:detector}.

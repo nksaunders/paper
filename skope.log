@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 FEB 2018 13:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  21 FEB 2018 12:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -259,87 +259,150 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )))
-Package epstopdf-base Info: Redefining graphics rule for `.pdf' on input line 7
-.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-(./skope.aux)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen133
+\captionmargin@=\dimen134
+\captionwidth=\dimen135
+\caption@tempdima=\dimen136
+\caption@indent=\dimen137
+\caption@parindent=\dimen138
+\caption@hangindent=\dimen139
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\vskip 2ex\noindent #1\
+ #2\par .
+\c@ContinuedFloat=\count113
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+\c@subfigure=\count114
+\c@subtable=\count115
+)
+Package epstopdf-base Info: Redefining graphics rule for `.pdf' on input line 1
+1.
+
+(./skope.aux
+
+LaTeX Warning: Label `fig:fig2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:fig2' multiply defined.
+
+)
 \openout1 = `skope.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-
-(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+ (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count113
-\scratchdimen=\dimen133
+\scratchcounter=\count116
+\scratchdimen=\dimen140
 \scratchbox=\box34
-\nofMPsegments=\count114
-\nofMParguments=\count115
+\nofMPsegments=\count117
+\nofMParguments=\count118
 \everyMPshowfont=\toks23
-\MPscratchCnt=\count116
-\MPscratchDim=\dimen134
-\MPnumerator=\count117
-\makeMPintoPDFobject=\count118
+\MPscratchCnt=\count119
+\MPscratchDim=\dimen141
+\MPnumerator=\count120
+\makeMPintoPDFobject=\count121
 \everyMPtoPDFconversion=\toks24
 )
 AAS preprint substyle, v5.2 <12 Dec 2003>.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 28.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 32.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 28.
+LaTeX Font Info:    Try loading font information for U+msa on input line 32.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 28.
+LaTeX Font Info:    Try loading font information for U+msb on input line 32.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 40.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 44.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 40.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 44.
  [2]
 <images/detector.png, id=19, 254.9525pt x 245.91875pt>
 File: images/detector.png Graphic file (type png)
 
 <use images/detector.png>
-Package pdftex.def Info: images/detector.png used on input line 52.
-(pdftex.def)             Requested size: 234.87749pt x 226.56694pt.
- [3 <./images/detector.png>]
-<images/nomotion.png, id=25, 469.755pt x 354.6048pt>
+Package pdftex.def Info: images/detector.png used on input line 58.
+(pdftex.def)             Requested size: 105.69414pt x 101.9493pt.
+
+<images/uninterpolated.png, id=21, 254.9525pt x 249.93375pt>
+File: images/uninterpolated.png Graphic file (type png)
+
+<use images/uninterpolated.png>
+Package pdftex.def Info: images/uninterpolated.png used on input line 65.
+(pdftex.def)             Requested size: 105.69414pt x 103.61378pt.
+
+<images/interpolated.png, id=22, 241.90375pt x 245.91875pt>
+File: images/interpolated.png Graphic file (type png)
+
+<use images/interpolated.png>
+Package pdftex.def Info: images/interpolated.png used on input line 72.
+(pdftex.def)             Requested size: 99.82364pt x 101.48026pt.
+
+
+Package caption Warning: \label without proper reference on input line 76.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:detector' on page 3 undefined on input line 79.
+
+[3 <./images/detector.png> <./images/uninterpolated.png> <./images/interpolated
+.png>] <images/nomotion.png, id=29, 469.755pt x 354.6048pt>
 File: images/nomotion.png Graphic file (type png)
- <use images/nomotion.png>
-Package pdftex.def Info: images/nomotion.png used on input line 91.
+
+<use images/nomotion.png>
+Package pdftex.def Info: images/nomotion.png used on input line 113.
 (pdftex.def)             Requested size: 234.87749pt x 177.30196pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4] <images/1xmotion.png, id=30, 469.755pt x 348.3414pt>
+<images/1xmotion.png, id=30, 469.755pt x 348.3414pt>
 File: images/1xmotion.png Graphic file (type png)
-
-<use images/1xmotion.png>
-Package pdftex.def Info: images/1xmotion.png used on input line 100.
+ <use images/1xmotion.png>
+Package pdftex.def Info: images/1xmotion.png used on input line 122.
 (pdftex.def)             Requested size: 234.87749pt x 174.17027pt.
- [5 <./images/nomotion.png> <./images/1xmotion.png>]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4] [5 <./images/nomotion.png>]
 Package epstopdf Info: Source file: <images/cr.eps>
 (epstopdf)                    date: 2017-11-15 09:15:03
 (epstopdf)                    size: 3810428 bytes
@@ -348,76 +411,80 @@ Package epstopdf Info: Source file: <images/cr.eps>
 (epstopdf)                    size: 18005 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/cr-eps-converted-to
 .pdf images/cr.eps>
-(epstopdf)             \includegraphics on input line 126.
+(epstopdf)             \includegraphics on input line 148.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/cr-eps-converted-to.pdf, id=36, 794.97pt x 361.35pt>
+<images/cr-eps-converted-to.pdf, id=39, 794.97pt x 361.35pt>
 File: images/cr-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/cr-eps-converted-to.pdf>
-Package pdftex.def Info: images/cr-eps-converted-to.pdf used on input line 126.
+Package pdftex.def Info: images/cr-eps-converted-to.pdf used on input line 148.
 
 (pdftex.def)             Requested size: 469.75499pt x 213.53099pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/rawmotion.png, id=37, 2007.5pt x 2182.1525pt>
+<images/rawmotion.png, id=40, 2007.5pt x 2182.1525pt>
 File: images/rawmotion.png Graphic file (type png)
 
 <use images/rawmotion.png>
-Package pdftex.def Info: images/rawmotion.png used on input line 155.
+Package pdftex.def Info: images/rawmotion.png used on input line 177.
 (pdftex.def)             Requested size: 469.75499pt x 510.60832pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6] [7 <./images/cr-eps-converted-to.pdf>] [8] [9]
-<images/detmotion.png, id=73, 2007.5pt x 1511.6475pt>
+[6 <./images/1xmotion.png>] [7 <./images/cr-eps-converted-to.pdf>] [8]
+<images/detmotion.png, id=74, 2007.5pt x 1511.6475pt>
 File: images/detmotion.png Graphic file (type png)
 
 <use images/detmotion.png>
-Package pdftex.def Info: images/detmotion.png used on input line 227.
+Package pdftex.def Info: images/detmotion.png used on input line 249.
 (pdftex.def)             Requested size: 469.75499pt x 353.71487pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10] [11 <./images/rawmotion.png>] [12 <./images/detmotion.png>] (./skope.bbl
+[9] [10] [11 <./images/rawmotion.png>] [12 <./images/detmotion.png>]
+(./skope.bbl
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
-)
-[13
+) [13
 
-] (./skope.aux) ) 
+] (./skope.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3969 strings out of 492995
- 54042 string characters out of 6132704
- 123185 words of memory out of 5000000
- 7446 multiletter control sequences out of 15000+600000
- 12669 words of font info for 53 fonts, out of 8000000 for 9000
+ 5106 strings out of 492995
+ 74703 string characters out of 6132704
+ 147428 words of memory out of 5000000
+ 8573 multiletter control sequences out of 15000+600000
+ 12969 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,18n,28p,1579b,273s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
-.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
-b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
-usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on skope.pdf (13 pages, 2459083 bytes).
+ 42i,18n,39p,1579b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loca
+l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on skope.pdf (13 pages, 2471295 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
+ 132 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

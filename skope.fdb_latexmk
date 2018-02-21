@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex skope"] 1519162594 "skope.aux" "skope.bbl" "skope" 1519162596
+["bibtex skope"] 1519245312 "skope.aux" "skope.bbl" "skope" 1519245314
   "./aasjournal.bst" 1510766083 34618 459689a02a97161f219d1474d195febc ""
   "references.bib" 1517948342 10529 3f3378d07ef42b5e18323d066639eb6c ""
-  "skope.aux" 1519162596 5051 9fb989a1ae77588921b1a6c62a614e88 ""
+  "skope.aux" 1519245314 5406 47b01432ba467ca8cc77617efda012f1 ""
   (generated)
   "skope.blg"
   "skope.bbl"
-["pdflatex"] 1519162594 "skope.tex" "skope.pdf" "skope" 1519162596
+["pdflatex"] 1519245312 "skope.tex" "skope.pdf" "skope" 1519245314
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -23,6 +23,7 @@
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1480098701 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1480098701 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1480098701 1520 eccf95517727cb11801f4f1aee3a21b4 ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1480098701 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1480098701 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1480098701 1300 b62933e007d01cfd073f79b963c01526 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1480098701 1292 21c1c5bfeaebccffdb478fd231a0997d ""
@@ -71,6 +72,9 @@
   "/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd" 1480098821 2256 80ce1168fb4ce6a85583a9cf8972c013 ""
   "/usr/local/texlive/2017/texmf-dist/tex/latex/base/size12.clo" 1480098821 8303 1d67e16498f00f63da792fab169302fc ""
   "/usr/local/texlive/2017/texmf-dist/tex/latex/base/ulasy.fd" 1480098821 2020 d5c6fbbe41610194529ecfc3e463c559 ""
+  "/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption.sty" 1480098823 66233 8b81cfab95a1f8fc2f0f6c89415b087a ""
+  "/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty" 1480098823 64866 1ea74c5f2d1685881497f021b8f186b2 ""
+  "/usr/local/texlive/2017/texmf-dist/tex/latex/caption/subcaption.sty" 1480098823 5038 413302044f9700cf65465d590c2f4ad1 ""
   "/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1480098830 1224 978390e9c2234eab29404bc21b268d1e ""
   "/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def" 1485129666 58250 3792a9d2d1d664ee8c742498e295b051 ""
   "/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty" 1492297155 14603 b288c52bd5d46d593af31dbc7e548236 ""
@@ -96,13 +100,15 @@
   "images/cr.eps" 1510766103 3810428 d3d17093fb1a7ccebbf1eaa25e9ce9bc ""
   "images/detector.png" 1519157700 29358 770362aa08e0569977e87c1757e7ba64 ""
   "images/detmotion.png" 1507810553 767720 5eae145cc3345d1664bd2bd2f93ed3b0 ""
+  "images/interpolated.png" 1519243276 1081 58d13324f873934891854513195c0a41 ""
   "images/nomotion.png" 1510865488 210441 79f9e4a0730d81383d2f4892fc38eccf ""
   "images/rawmotion.png" 1507785307 1264059 b8c5cde239c0af3b4ccfafe546e2836d ""
-  "skope.aux" 1519162596 5051 9fb989a1ae77588921b1a6c62a614e88 ""
-  "skope.bbl" 1519162594 3008 19a5a82b2bb1d2f3632c1de16e8ed0ec "bibtex skope"
-  "skope.tex" 1519162591 19249 44518b89305e9751b601cbef8035798e ""
+  "images/uninterpolated.png" 1519243235 10726 525afe55b9216bdb9dbae126caf8b51d ""
+  "skope.aux" 1519245314 5406 47b01432ba467ca8cc77617efda012f1 ""
+  "skope.bbl" 1519245312 3008 19a5a82b2bb1d2f3632c1de16e8ed0ec "bibtex skope"
+  "skope.tex" 1519245309 19869 a1df70981ae48278ba5c6cf795299a75 ""
   (generated)
   "skope.pdf"
+  "skopeNotes.bib"
   "skope.aux"
   "skope.log"
-  "skopeNotes.bib"
