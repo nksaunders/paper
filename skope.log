@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  22 FEB 2018 14:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  22 FEB 2018 14:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -352,21 +352,21 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 File: images/detector.png Graphic file (type png)
 
 <use images/detector.png>
-Package pdftex.def Info: images/detector.png used on input line 58.
+Package pdftex.def Info: images/detector.png used on input line 60.
 (pdftex.def)             Requested size: 105.69414pt x 101.9493pt.
 
 <images/uninterpolated.png, id=21, 254.9525pt x 249.93375pt>
 File: images/uninterpolated.png Graphic file (type png)
 
 <use images/uninterpolated.png>
-Package pdftex.def Info: images/uninterpolated.png used on input line 64.
+Package pdftex.def Info: images/uninterpolated.png used on input line 66.
 (pdftex.def)             Requested size: 105.69414pt x 103.61378pt.
 
 <images/interpolated.png, id=22, 241.90375pt x 245.91875pt>
 File: images/interpolated.png Graphic file (type png)
 
 <use images/interpolated.png>
-Package pdftex.def Info: images/interpolated.png used on input line 70.
+Package pdftex.def Info: images/interpolated.png used on input line 72.
 (pdftex.def)             Requested size: 99.82364pt x 101.48026pt.
  [3 <./images/detector.png> <./images/uninterpolated.png> <./images/interpolate
 d.png>]
@@ -460,7 +460,7 @@ b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
 usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on skope.pdf (13 pages, 2470808 bytes).
+Output written on skope.pdf (13 pages, 2470812 bytes).
 PDF statistics:
  132 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream
