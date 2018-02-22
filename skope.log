@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  21 FEB 2018 12:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  22 FEB 2018 14:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -291,14 +291,7 @@ Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
 Package epstopdf-base Info: Redefining graphics rule for `.pdf' on input line 1
 1.
 
-(./skope.aux
-
-LaTeX Warning: Label `fig:fig2' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:fig2' multiply defined.
-
-)
+(./skope.aux)
 \openout1 = `skope.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -313,7 +306,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
- (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count116
 \scratchdimen=\dimen140
@@ -365,29 +359,29 @@ Package pdftex.def Info: images/detector.png used on input line 58.
 File: images/uninterpolated.png Graphic file (type png)
 
 <use images/uninterpolated.png>
-Package pdftex.def Info: images/uninterpolated.png used on input line 65.
+Package pdftex.def Info: images/uninterpolated.png used on input line 64.
 (pdftex.def)             Requested size: 105.69414pt x 103.61378pt.
 
 <images/interpolated.png, id=22, 241.90375pt x 245.91875pt>
 File: images/interpolated.png Graphic file (type png)
 
 <use images/interpolated.png>
-Package pdftex.def Info: images/interpolated.png used on input line 72.
+Package pdftex.def Info: images/interpolated.png used on input line 70.
 (pdftex.def)             Requested size: 99.82364pt x 101.48026pt.
 
 
-Package caption Warning: \label without proper reference on input line 76.
+Package caption Warning: \label without proper reference on input line 73.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:detector' on page 3 undefined on input line 79.
+LaTeX Warning: Reference `fig:detector' on page 3 undefined on input line 76.
 
 [3 <./images/detector.png> <./images/uninterpolated.png> <./images/interpolated
 .png>] <images/nomotion.png, id=29, 469.755pt x 354.6048pt>
 File: images/nomotion.png Graphic file (type png)
 
 <use images/nomotion.png>
-Package pdftex.def Info: images/nomotion.png used on input line 113.
+Package pdftex.def Info: images/nomotion.png used on input line 110.
 (pdftex.def)             Requested size: 234.87749pt x 177.30196pt.
 
 
@@ -396,7 +390,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <images/1xmotion.png, id=30, 469.755pt x 348.3414pt>
 File: images/1xmotion.png Graphic file (type png)
  <use images/1xmotion.png>
-Package pdftex.def Info: images/1xmotion.png used on input line 122.
+Package pdftex.def Info: images/1xmotion.png used on input line 119.
 (pdftex.def)             Requested size: 234.87749pt x 174.17027pt.
 
 
@@ -411,14 +405,14 @@ Package epstopdf Info: Source file: <images/cr.eps>
 (epstopdf)                    size: 18005 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/cr-eps-converted-to
 .pdf images/cr.eps>
-(epstopdf)             \includegraphics on input line 148.
+(epstopdf)             \includegraphics on input line 145.
 Package epstopdf Info: Output file is already uptodate.
 
 <images/cr-eps-converted-to.pdf, id=39, 794.97pt x 361.35pt>
 File: images/cr-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/cr-eps-converted-to.pdf>
-Package pdftex.def Info: images/cr-eps-converted-to.pdf used on input line 148.
+Package pdftex.def Info: images/cr-eps-converted-to.pdf used on input line 145.
 
 (pdftex.def)             Requested size: 469.75499pt x 213.53099pt.
 
@@ -429,7 +423,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: images/rawmotion.png Graphic file (type png)
 
 <use images/rawmotion.png>
-Package pdftex.def Info: images/rawmotion.png used on input line 177.
+Package pdftex.def Info: images/rawmotion.png used on input line 174.
 (pdftex.def)             Requested size: 469.75499pt x 510.60832pt.
 
 
@@ -440,7 +434,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: images/detmotion.png Graphic file (type png)
 
 <use images/detmotion.png>
-Package pdftex.def Info: images/detmotion.png used on input line 249.
+Package pdftex.def Info: images/detmotion.png used on input line 246.
 (pdftex.def)             Requested size: 469.75499pt x 353.71487pt.
 
 
@@ -457,18 +451,15 @@ Missing character: There is no “ in font cmr12!
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 5106 strings out of 492995
- 74703 string characters out of 6132704
+ 5102 strings out of 492995
+ 74655 string characters out of 6132704
  147428 words of memory out of 5000000
- 8573 multiletter control sequences out of 15000+600000
+ 8569 multiletter control sequences out of 15000+600000
  12969 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,18n,39p,1579b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,18n,39p,1579b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
@@ -481,7 +472,7 @@ exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
 ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on skope.pdf (13 pages, 2471295 bytes).
+Output written on skope.pdf (13 pages, 2471290 bytes).
 PDF statistics:
  132 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream
