@@ -76,7 +76,7 @@ A sample detector with included sensitivity variation can be seen in figure \ref
   \label{fig:detector}
 \end{figure}
 
-Currently, stellar PSFs already traverse various regions of sensitivity variation on the CCD due to pointing instability. As spacecraft motion increases, PSFs will move more dramatically across many pixels, which will contribute significant noise to sputtering-\textit{K2} light curves.
+For campaigns up to 16, stellar PSFs already traverse various regions of sensitivity variation on the CCD due to pointing instability. As spacecraft motion increases, PSFs will move more dramatically across many pixels, which will contribute significant noise to sputtering-\textit{K2} light curves.
 
 \subsection{PSF Model}
 
@@ -104,7 +104,7 @@ P(x,y) & = \sum_m \frac{1}{2\pi\sigma_{x,m}\sigma_{x,n}\sqrt{1-\rho_m^2}} \text{
 \end{split}
 \]
 
-Our model for the sensitivity variation was chosen to capture the same noise magnitude as real \textit{K2} targets. For our noise metric, we use the Combined Differential Photometric Precision, developed by the \textit{Kepler} team \citep{2012PASP..124.1279C}. In figure \ref{fig:nomotion}, we plot the CDPP of our simulated light curves with no motion against CDPP of original \textit{Kepler} light curves as a function of $K_p\ Mag$. Our synthetic targets follow the trend of photon-limited noise. This is because our benchmark model has no stellar variability, which can add extraneous noise to de-trended light curves.
+Our model for the sensitivity variation was chosen to capture the same noise magnitude as real \textit{K2} targets. For our noise metric, we use the Combined Differential Photometric Precision, developed by the \textit{Kepler} team \citep{2012PASP..124.1279C}. In figure \ref{fig:nomotion}, we plot the CDPP of our simulated light curves with no motion against CDPP of original \textit{Kepler} light curves as a function of $K_p\ Mag$. Our synthetic targets follow the trend of photon-limited noise because our benchmark model has no stellar variability, which can add extraneous noise to de-trended light curves.
 
 \begin{figure}[h]
 	\centering
