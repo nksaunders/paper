@@ -183,7 +183,7 @@ The two sources of noise presented above -- pixel crowding and detector sensitiv
 
 \subsection{PLD}
 
-To de-trend our synthetic light curves, we used a variant of the PLD method applied in the \texttt{EVEREST} pipeline. For a more detailed treatment of PLD, see the first two \texttt{EVEREST} papers \citep{2016AJ....152..100L,2017arXiv170205488L}. Our model included a Gaussian Process (GP) to capture and retain the astrophysical signal of the synthetic host star.
+To de-trend our synthetic light curves, we used a variant of the PLD method applied in the \texttt{EVEREST} pipeline. For a more detailed treatment of PLD, see the first two \texttt{EVEREST} papers \citep{2016AJ....152..100L,2017arXiv170205488L}. In addition to the quantum sensitivity variation and motion vectors, our model included a Gaussian Process (GP) to capture and retain the astrophysical signal of the synthetic host star.
 
 The likelihood ($\mathcal{L}$) of our model capturing the true signal of the star is captured closely by a Gaussian distribution given by
 
@@ -191,7 +191,7 @@ The likelihood ($\mathcal{L}$) of our model capturing the true signal of the sta
 \mathcal{L} = \exp{\left[-\left( \frac{\textbf{y}-\textbf{X}\cdot\textbf{w}}{2\pmb{\Sigma}} \right)^2 \right]}, \\
 \]
 
-where $\textbf{y}$ is the raw flux light curve, $\textbf{X}$ is the design matrix, $\pmb{\Sigma}$ is the covariance matrix between pixels, and $\textbf{w}$ is the array of weights. By solving for the derivative of the natural log of this likelihood, we locate the distribution peak and the best values for weights on the pixel flux vectors.
+where $\textbf{y}$ is the raw flux light curve, $\textbf{X}$ is the design matrix, $\pmb{\Sigma}$ is the covariance matrix between pixels, and $\textbf{w}$ is the array of weights. By solving for the derivative of the natural log of this likelihood with respect to $\textbf{w}$, we locate the distribution peak and the best values for weights on the pixel flux vectors.
 
 \[
 \ln{\mathcal{L}} = - \frac{1}{2}\left(\textbf{y} - \textbf{X}\cdot\textbf{w} \right)^\top \cdot \pmb{\Sigma}^{-1} \cdot \left(\textbf{y} - \textbf{X}\cdot\textbf{w} \right) \\
@@ -219,7 +219,7 @@ The final model can be found by solving
 
 \subsection{PSF-fitting}
 
-For some targets, particularly those with exceptionally close neighbors, defining an aperture around the central star can be difficult, because pixels containing flux pollution also contain important stellar signal. Exclusion of pixels above the prescribed crowding cutoff would render the remaining flux inadequate to thoroughly analyze transiting exoplanet targets.
+For some targets, particularly those with exceptionally close neighbors, defining an aperture around the central star can be difficult, because pixels containing flux pollution also contain important stellar signal. In some cases, exclusion of pixels with high values of $C$ can render the remaining flux inadequate to thoroughly analyze transiting exoplanet targets.
 
 We present a second method to remove unwanted neighbor signal: fitting each target in the frame with a Gaussian PSF model and subtracting the flux contributed by the neighbor from each pixel. This process involves constructing sums of $n$ PSFs, where $n$ is the number of stars within the aperture, and minimizing $\chi^2$ between the model, $m$ and flux, $y$. $\chi^2$ is given by
 
