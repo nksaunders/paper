@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 MAR 2018 17:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  18 APR 2018 13:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -411,33 +411,36 @@ Package pdftex.def Info: images/cr-eps-converted-to.pdf used on input line 146.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 <images/rawmotion.png, id=40, 2007.5pt x 2182.1525pt>
 File: images/rawmotion.png Graphic file (type png)
 
 <use images/rawmotion.png>
-Package pdftex.def Info: images/rawmotion.png used on input line 175.
+Package pdftex.def Info: images/rawmotion.png used on input line 177.
 (pdftex.def)             Requested size: 469.75499pt x 510.60832pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 <./images/1xmotion.png>] [7 <./images/cr-eps-converted-to.pdf>] [8]
-<images/detmotion.png, id=74, 2007.5pt x 1511.6475pt>
+[6 <./images/1xmotion.png>] [7 <./images/cr-eps-converted-to.pdf>] [8] [9]
+<images/detmotion.png, id=77, 2007.5pt x 1511.6475pt>
 File: images/detmotion.png Graphic file (type png)
 
 <use images/detmotion.png>
-Package pdftex.def Info: images/detmotion.png used on input line 247.
+Package pdftex.def Info: images/detmotion.png used on input line 250.
 (pdftex.def)             Requested size: 469.75499pt x 353.71487pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9] [10] [11 <./images/rawmotion.png>] [12 <./images/detmotion.png>]
-(./skope.bbl
+[10] [11 <./images/rawmotion.png>] [12 <./images/detmotion.png>] (./skope.bbl
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
-) [13
+)
+[13
 
 ] (./skope.aux) ) 
 Here is how much of TeX's memory you used:
@@ -460,7 +463,7 @@ b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
 usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on skope.pdf (13 pages, 2470566 bytes).
+Output written on skope.pdf (13 pages, 2465178 bytes).
 PDF statistics:
  132 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream

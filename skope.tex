@@ -31,7 +31,7 @@
 
 \section{Introduction}
 
-Despite the failure of two reaction wheels in 2012 and 2013, the \textit{Kepler Space Telescope} has continued to produce valuable data in its new configuration, \textit{K2}, with significantly higher precision than ground based telescopes \citep{2014PASP..126..398H}. However, due to the unstable pointing caused by the missing reaction wheels, targets have significant motion relative to the quantum sensitivity variation of the telescope detector, creating noise in \textit{K2} light curves (\textbf{source}). A number of attempts have been made to isolate and remove the instrumental noise from \textit{K2} data \citep{2015A&A...579A..19A, 0004-637X-806-1-30, 2015MNRAS.454.4159H, 2015MNRAS.447.2880A, 2016MNRAS.459.2408A}.
+Despite the failure of two reaction wheels in 2012 and 2013, the \textit{Kepler Space Telescope} has continued to produce valuable data in its new configuration, \textit{K2}, with significantly higher precision than ground based telescopes \citep{2014PASP..126..398H}. However, due to the unstable pointing caused by the missing reaction wheels, targets have significant motion relative to the quantum sensitivity variation of the telescope detector, creating noise in \textit{K2} light curves. A number of attempts have been made to isolate and remove the instrumental noise from \textit{K2} data \citep{2015A&A...579A..19A, 0004-637X-806-1-30, 2015MNRAS.454.4159H, 2015MNRAS.447.2880A, 2016MNRAS.459.2408A}.
 
 Existing de-trending pipelines, notably the \texttt{K2SFF} pipeline, developed by \cite{2014PASP..126..948V}, generate Gaussian fits to the stellar PSF to find the centroid position of targets. From this, motion relative to the detector can be backed out and used to de-trend \textit{K2} light curves. However, factors such as light aberration, pixel sensitivity variation, and imperfect PSF fitting can lead to uncertainty in the central pillar of these models: the motion of the star relative to the detector.
 
@@ -47,9 +47,9 @@ In this paper, we present options for assessing and removing these sources of no
 
 \subsection{Pixel Sensitivity Variation}
 
-Removal of instrumental noise requires a thorough understanding of its source. Stellar motion relative to the pixel sensitivity variation on the \textit{Kepler} CCD causes fluctuation in the amount of light received by the telescope detector. In order to accurately fit a PSF model to multiple targets on the detector, it became necessary to generate a model for the pixel sensitivity variation of the CCD.
+Removal of instrumental noise requires a thorough understanding of its source. Stellar motion relative to the pixel sensitivity variation on the \textit{Kepler} CCD causes fluctuation in the amount of light received by the telescope detector. In order to accurately fit a PSF model to multiple targets on the detector, it became necessary to generate a foreward model for the pixel sensitivity variation of the CCD.
 
-We did not set out to model the exact sensitivity of the \textit{Kepler} CCD, rather our goal was to simply characterize its contribution to the noise in \textit{K2} light curves. Light curves generated against this model are adequate to serve as well-understood sample targets on which to test de-trending methods. To accurately represent the \textit{Kepler} CCD, we generated a model for the detector that included both inter-pixel sensitivity variation between pixels and intra-pixel sensitivity variation within each pixel. We found that a stochastic distribution of sensitivity with ${\sim}1\%$ variation between pixels and ${\sim}5\%$ variation within pixels, from center to edge.
+We did not set out to model the exact sensitivity of the \textit{Kepler} CCD, rather our goal was to simply characterize its contribution to the noise in \textit{K2} light curves. Light curves generated against this model are adequate to serve as well-understood sample targets on which to test noise levels of light curves generated under conditions of high roll magnitude and apply de-trending methods. To accurately represent the \textit{Kepler} CCD, we generated a model for the detector that included both inter-pixel sensitivity variation between pixels and intra-pixel sensitivity variation within each pixel. We found that a stochastic distribution of sensitivity with ${\sim}1\%$ variation between pixels and ${\sim}5\%$ variation within pixels, from center to edge.
 
 A sample detector with included sensitivity variation can be seen in figure \ref{fig:detector}.
 
@@ -139,7 +139,7 @@ We define a crowding metric, $C$, as a quantitative measure of the significance 
 C = 1 - \frac{F_{target}}{F_{total}}
 \]
 
-Applications of PLD have demonstrated that it is not well suited to handle targets with high values of $C$ in pixels containing flux from the target star. These cases suffer from overfitting at a higher rate and transit recovery accuracy is compromised significantly. A sample target (EPIC 202072978) and the crowding metric $C$ for each pixel are shown in Fig. 2. This plot was achieved by simultaneously fitting PSFs to the central star and nearby contaminant, then calculating $C$ for each pixel from equation (3).
+Applications of PLD have demonstrated that it is not well suited to handle targets with high values of $C$ in pixels containing flux from the target star. These cases suffer from overfitting at a higher rate and transit recovery accuracy is compromised significantly. A sample target (EPIC 202072978) and the crowding metric $C$ for each pixel are shown in Fig. 2. This plot was achieved by simultaneously fitting PSFs to the central star and nearby contaminant, then calculating $C$ for each pixel from equation (4).
 
 \begin{figure}[h]
 	\centering
@@ -147,6 +147,8 @@ Applications of PLD have demonstrated that it is not well suited to handle targe
 	\caption{A single cadence from target EPIC 202072978, a $12^{\text{th}}$ magnitude exoplanet host and its $16^{\text{th}}$ magnitude neighbor (left), and the crowding metric $C$ in each pixel for this cadence, as defined in Eq. 4 (right).}
 	\label{fig:crowding}
 \end{figure}
+
+The fractional pixel fluxes in pixels without any contamination by neighboring stars does not contain any information about the transit signal because it is divided out
 
 \subsection{High Roll}
 
@@ -217,6 +219,12 @@ The final model can be found by solving
 \textbf{m} = \textbf{X} \cdot \left( \textbf{X}^\top \cdot \pmb{\Sigma}^{-1} \cdot \textbf{X} \right)^{-1} \cdot \textbf{X}^\top \cdot \pmb{\Sigma}^{-1} \cdot \textbf{y}. \\
 \]
 
+\subsection{Aperture-fitting}
+
+The simplest solution to the issue of crowded apertures is to only consider pixels that contain the most flux from the desired target and exclude flux received by neighboring stars. The crowding metric in each pixel can be used to determine which pixels should be included to maximize target flux. In a process we refer to as aperture PLD (aPLD), we define an aperture based on the crowding metric in each pixel to maximize target flux.
+
+Injection tests were performed by removing noise from simulated light curves with aPLD and measuring the transit depth of the de-trended light curve. Comparing this value to the injected depth, we determine the effectiveness of aPLD and constrain useful values of $C$. With our injection tests, we find that pixels with $C>0.3$ should be excluded to maximize the effectiveness of aPLD.
+
 \subsection{PSF-fitting}
 
 For some targets, particularly those with exceptionally close neighbors, defining an aperture around the central star can be difficult, because pixels containing flux pollution also contain important stellar signal. In some cases, exclusion of pixels with high values of $C$ can render the remaining flux inadequate to thoroughly analyze transiting exoplanet targets.
@@ -230,17 +238,12 @@ We present a second method to remove unwanted neighbor signal: fitting each targ
 
 Where $\sigma$ is the flux error. Our model, defined in equation (2), was fit to each cadence of crowded \textit{K2} targets.
 
-\subsection{Aperture-fitting}
-
-The simplest solution to the issue of crowded apertures is to only consider pixels that contain the most flux from the desired target and exclude flux received by neighboring stars. The crowding metric in each pixel can be used to determine which pixels should be included to maximize target flux. (\textit{I need to give this a more thorough treatment to determine exactly what value of $C$ is best to include within an aperture. To do so, I will perform aperture tests on a variety of targets and maximize injected transit recovery accuracy to constrain ideal values of $C$.}) In a process we refer to as aperture PLD (aPLD), we define an aperture based on the crowding metric in each pixel to maximize target flux.
-
-Injection tests were performed by removing noise from simulated light curves with aPLD and measuring the transit depth of the de-trended light curve. Comparing this value to the injected depth, we determine the effectiveness of aPLD and constrain useful values of $C$. With our injection tests, we find that pixels with $C>0.3$ should be excluded to maximize the effectiveness of aPLD.
 
 \section{Results}
 
 \subsection{Motion Tests}
 
-When de-trended with second order PLD, our synthetic light curves align with the noise of original \textit{Kepler} observations for motion coefficients of 1x, 2x, and 5x. 10x motion shows increased noise in the de-trended light curve, but still performs better than observations from the ground.
+When de-trended with second order PLD, our synthetic light curves align with the noise of original \textit{Kepler} observations for motion coefficients of 1x, 2x, and 5x. 10x motion shows increased noise in the de-trended light curve, but still performs better than observations from the ground. A detailed look at these results can be found in Fig. \ref{fig:detmotion}.
 
 \begin{figure}[h]
 	\centering
@@ -255,15 +258,11 @@ When de-trended with second order PLD, our synthetic light curves align with the
 
 \subsection{Focus Changes}
 
-When \textit{TESS} launches, it will begin observation with a known focusing issue, resulting in larger stellar PSFs. Further, the space telescope's trajectory will cause a periodic variation in the incident sunlight on the telescope, which will affect the quantum sensitivity of pixels. Changing sensitivity will cause \textit{TESS} PSFs to ``breathe'' as the temperature rises and falls, and apertures around \textit{TESS} targets will need to breathe correspondingly.
-
-\subsection{Seeing}
-
-\textbf{Not sure about this stuff yet.}
-
-These methods can also be applied to ground-based observations. PSF aberration due to seeing contributes significant noise to observations which can be identified and removed by PLD. \textbf{Talk to Brett, use APO data.}
+When \textit{TESS} launches, it will begin observation with a known focusing issue, resulting in larger stellar PSFs. Further, the space telescope's trajectory will cause a periodic variation in the incident sunlight on the telescope, which will affect the quantum sensitivity of pixels. Periodically changing sensitivity will cause \textit{TESS} PSFs to ``breathe" as the temperature rises and falls, and apertures around \textit{TESS} targets will need to expand and contract correspondingly to effectively capture the desired stellar signal.
 
 \section{Conclusion}
+
+
 
 \clearpage
 \bibliographystyle{aasjournal}
