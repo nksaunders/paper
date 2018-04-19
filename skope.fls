@@ -82,6 +82,10 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT skope.aux
 INPUT skope.aux
 OUTPUT skope.aux

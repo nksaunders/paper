@@ -5,6 +5,7 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{caption,subcaption}
+\usepackage{xcolor}
 \captionsetup[figure]{labelsep=space,singlelinecheck=false}
 \captionsetup[subfigure]{justification=centering}
 
@@ -25,7 +26,7 @@
 
 \begin{abstract}
 
-	As the \textit{Kepler} Space Telescope's follow-up \textit{K2} mission enters its final campaigns of observation, the fuel powering the spacecraft's stabilizing thrusters is expected to begin to run out, causing thruster fires to sputter. Sputtering will cause higher magnitude and less predictable motion of stellar Point Spread Functions (PSFs) relative to the spacecraft detector, generating more noise in transiting exoplanet light curves. To understand this increased noise, we present \texttt{skope}, a \texttt{python} package to create a forward model of the \textit{Kepler} Space Telescope detector and simulate stellar targets traversing the CCD. Using these simulations, we characterize the contribution of detector sensitivity variation to the noise of \textit{K2} light curves and test various models for thruster sputtering in preparation for identifying high motion in future \textit{K2} data. We also test methods to increase the effectiveness of existing noise-removal techniques for space telescope exoplanet targets, focusing our treatment on stars with bright neighbors or high motion relative to the detector. Using techniques tested on simulations, we study a population of exoplanet targets that has received less attention due to difficulties arising from contribution by bright nearby stars. My noise-removal methods can be applied to current and future \textit{K2} data, as well as data from future missions such as the Transiting Exoplanet Survey Satellite (\textit{TESS}) and the James Webb Space Telescope (\textit{JWST}).
+	As the \textit{Kepler} Space Telescope's follow-up \textit{K2} mission enters its final campaigns of observation, the fuel powering the spacecraft's stabilizing thrusters is expected to begin to run out, causing thruster fires to sputter. Sputtering will cause higher magnitude and less predictable motion of stellar Point Spread Functions (PSFs) relative to the spacecraft detector, generating more noise in transiting exoplanet light curves. To understand this increased noise, we present \texttt{skope}, a \texttt{python} package to create a forward model of the \textit{Kepler} Space Telescope detector and simulate stellar targets traversing the CCD. Using these simulations, we characterize the contribution of detector sensitivity variation to the noise of \textit{K2} light curves, test various models for thruster sputtering and assess the ability of de-trending techniques to remove instrumental noise from high motion light curves. Our tests demonstrated that \textit{Kepler}-like precision could be achieved for targets with up to 5x current spacecraft motion, and 10x motion still performed better than observations from the ground. Using techniques tested on simulations, we also study a population of exoplanet targets that has received less attention due to difficulties arising from contribution by bright nearby stars. Our noise-removal methods can be applied to current and future \textit{K2} data, as well as data from future missions such as the Transiting Exoplanet Survey Satellite (\textit{TESS}) and the James Webb Space Telescope (\textit{JWST}).
 
 \end{abstract}
 
@@ -148,7 +149,9 @@ Applications of PLD have demonstrated that it is not well suited to handle targe
 	\label{fig:crowding}
 \end{figure}
 
-The fractional pixel fluxes in pixels without any contamination by neighboring stars does not contain any information about the transit signal because it is divided out
+The fractional pixel fluxes in pixels without any contamination by neighboring stars does not contain any information about the transit signal because it is divided out for single target apertures. However, when multiple targets are present within an aperture, pixels containing flux from the exoplanet host star also contain flux from a neighbor that does not contain the transit signal, and it cannot be divided out of the calculation.
+
+\textcolor{red}{Add mathematical interpretation of this concept.}
 
 \subsection{High Roll}
 
@@ -157,7 +160,7 @@ To test how PLD performs on targets with high motion relative to the detector, w
 \begin{table}[h!]
 \begin{center}
     \begin{tabular}{c | c | c}
-        Motion Coefficient & Physical Motion (pixels) & Max Motion (pixels) \\
+        Motion Coefficient & Motion (pixels) & Max Motion (pixels) \\
         \hline \hline
         1 & $0.37\pm0.16$ & 0.56 \\
         2 & $0.38\pm0.32$ & 1.12 \\
@@ -238,6 +241,8 @@ We present a second method to remove unwanted neighbor signal: fitting each targ
 
 Where $\sigma$ is the flux error. Our model, defined in equation (2), was fit to each cadence of crowded \textit{K2} targets.
 
+\textcolor{red}{More here about fitting procedure and invarient PSF fit.}
+
 
 \section{Results}
 
@@ -254,6 +259,8 @@ When de-trended with second order PLD, our synthetic light curves align with the
 
 \subsection{Injection Tests}
 
+\textcolor{red}{Currently running transit injection tests to assess performance of aPLD and PSF-fitting and subtraction.}
+
 \section{Further Considerations}
 
 \subsection{Focus Changes}
@@ -262,7 +269,13 @@ When \textit{TESS} launches, it will begin observation with a known focusing iss
 
 \section{Conclusion}
 
+We have created a forward model of the \textit{Kepler} space telescope detector, \texttt{skope}, which includes inter- and intra-pixel sensitivity variation and mathematical simulations of stellar PSFs to test de-trending methods for exoplanet targets. Using these simulations, we have demonstrated that \texttt{EVEREST} and PLD are  capable of reducing systematic noise to higher precision than ground based observations in \textit{K2} light curves with up to 10x current spacecraft motion. We have shown that in the event of spacecraft thruster sputtering due to diminishing fuel reserves, valuable data can still be collected and analyzed to benefit \textit{K2} science goals.
 
+\textcolor{red}{Section regarding results of transit injection tests and statistics about success of aPLD and PSF-fitting to be written.} Our methods to improve de-trending for crowded targets will be valuable analysis tools for existing \textit{K2} data as well as for \textit{TESS} data, which will suffer from flux contamination at a higher rate due to larger PSFs.
+
+Though \textit{TESS}, the successor to \textit{Kepler}, has launched, there remains a wealth of both existing and unobserved \textit{K2} data that offers valuable contribution to our understanding of exoplanetary systems. Earthlike exoplanets can be difficult to identify in the high-magnitude noise of current \textit{K2} data, which will continue to get noisier as the mission reaches its conclusion. The methods we have presented aim to produce the most precise exoplanet identification, characterization, and analysis from the data we have available, and prepare for the next generation of space telescopes.
+
+\textcolor{red}{Acknowledgements.}
 
 \clearpage
 \bibliographystyle{aasjournal}
