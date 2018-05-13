@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex skope"] 1524115241 "skope.aux" "skope.bbl" "skope" 1526177640
+["bibtex skope"] 1524115241 "skope.aux" "skope.bbl" "skope" 1526178012
   "./aasjournal.bst" 1510766083 34618 459689a02a97161f219d1474d195febc ""
   "references.bib" 1517948342 10529 3f3378d07ef42b5e18323d066639eb6c ""
-  "skope.aux" 1526177640 5180 6b122c4dac3e5615e3a486df02a99bdd ""
+  "skope.aux" 1526178012 5180 6b122c4dac3e5615e3a486df02a99bdd ""
   (generated)
   "skope.blg"
   "skope.bbl"
-["pdflatex"] 1526177638 "skope.tex" "skope.pdf" "skope" 1526177640
+["pdflatex"] 1526178010 "skope.tex" "skope.pdf" "skope" 1526178012
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -106,11 +106,11 @@
   "images/nomotion.png" 1510865488 210441 79f9e4a0730d81383d2f4892fc38eccf ""
   "images/rawmotion.png" 1507785307 1264059 b8c5cde239c0af3b4ccfafe546e2836d ""
   "images/uninterpolated.png" 1519243235 10726 525afe55b9216bdb9dbae126caf8b51d ""
-  "skope.aux" 1526177640 5180 6b122c4dac3e5615e3a486df02a99bdd ""
+  "skope.aux" 1526178012 5180 6b122c4dac3e5615e3a486df02a99bdd ""
   "skope.bbl" 1524115241 3008 19a5a82b2bb1d2f3632c1de16e8ed0ec "bibtex skope"
-  "skope.tex" 1526177637 22142 a1cb64b5334cd7270aece4b14d6f824e ""
+  "skope.tex" 1526178008 22168 87b5899c979da5ef34bd2482361d5661 ""
   (generated)
-  "skopeNotes.bib"
-  "skope.aux"
   "skope.log"
+  "skope.aux"
   "skope.pdf"
+  "skopeNotes.bib"
